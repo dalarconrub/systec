@@ -2,15 +2,27 @@
 
 ## 🎯 Objetivo
 
-Migrar el sistema de productividad SYSTEC (basado en propiedades temporales de Todoist) a Notion usando **bases de datos relacionadas** y **múltiples fuentes** para mantener la lógica temporal y la clasificación automática.
+Migrar el sistema de productividad SYSTEC (basado en propiedades temporales de Todoist) a Notion usando **una única base de datos** con **múltiples fuentes (linked databases)** para mantener la lógica temporal y la clasificación automática.
 
 ---
 
-## 📊 Arquitectura de Bases de Datos
+## 📊 Arquitectura: Una Base de Datos, Múltiples Fuentes
 
-### Base de Datos Principal: **Acciones**
+### Concepto Clave: Linked Databases
 
-Esta es la base de datos central donde viven todas las acciones del sistema.
+En Notion, puedes crear **múltiples fuentes** de la misma base de datos. Cada fuente es una "vista vinculada" que puede tener:
+- Sus propios filtros
+- Su propio ordenamiento
+- Su propia agrupación
+- Su propia visualización (tabla, kanban, calendario, etc.)
+
+**Ventaja:** Todos los cambios se sincronizan automáticamente entre todas las fuentes.
+
+---
+
+## 🗄️ Base de Datos Única: **Acciones**
+
+Esta es la **única base de datos** que necesitas crear. Todas las vistas serán fuentes vinculadas de esta base de datos.
 
 #### Propiedades Requeridas
 
@@ -89,9 +101,7 @@ if(
 
 ---
 
-## 🔗 Bases de Datos Relacionadas
-
-### 1. Base de Datos: **Proyectos**
+## 🔗 Base de Datos Relacionada: **Proyectos**
 
 Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
 
@@ -101,241 +111,297 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
 | **Excluido** | Checkbox | Si está fuera del sistema SYSTEC |
 | **Acciones** | Relation | Relación con "Acciones" |
 
-### 2. Base de Datos: **Vistas Filtradas**
+---
 
-Base de datos que almacena las vistas predefinidas del sistema.
+## 📋 Crear Múltiples Fuentes de la Base de Datos "Acciones"
 
-| Propiedad | Tipo | Descripción |
-|-----------|------|-------------|
-| **Nombre Vista** | Title | Nombre de la vista |
-| **Tipo Filtro** | Select | Tipo, Horizonte, Operativo |
-| **Filtros** | Text | Descripción de los filtros aplicados |
+### Cómo Crear una Fuente Vinculada
+
+1. Ve a la base de datos "Acciones"
+2. Click en los `...` (tres puntos) en la esquina superior derecha
+3. Selecciona "Copy link"
+4. En la página donde quieres la vista, escribe `/linked` y selecciona "Create linked database"
+5. Pega el link de la base de datos
+6. Configura los filtros, orden y visualización específicos
+
+**Resultado:** Tienes la misma base de datos mostrada en múltiples lugares, cada una con su propia configuración.
 
 ---
 
-## 📋 Vistas por Tipo (Múltiples Fuentes)
+## 📋 Fuentes por Tipo (Múltiples Fuentes de "Acciones")
 
-### Vista: **IDEA**
+### Fuente: **IDEA**
 
-**Fuente:** Base de datos "Acciones"
+**Tipo:** Linked Database (fuente de "Acciones")
 
-**Filtros:**
-- `Tipo` = "IDEA"
-- `Estado` = "Activa"
-- `Proyecto.Excluido` ≠ true
+**Configuración:**
+- **Filtros:**
+  - `Tipo` = "IDEA"
+  - `Estado` = "Activa"
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por fecha de creación (más recientes primero)
+- **Visualización:** Tabla o Lista
 
-**Orden:**
-- Por fecha de creación (más recientes primero)
-
----
-
-### Vista: **META**
-
-**Fuente:** Base de datos "Acciones"
-
-**Filtros:**
-- `Tipo` = "META"
-- `Estado` = "Activa"
-- `Recurrente` ≠ true
-- `Hora` = empty
-- `Deadline` = empty
-- `Proyecto.Excluido` ≠ true
-
-**Orden:**
-- Por `Fecha` (ascendente)
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Tipo"
 
 ---
 
-### Vista: **HÁBITO**
+### Fuente: **META**
 
-**Fuente:** Base de datos "Acciones"
+**Tipo:** Linked Database (fuente de "Acciones")
 
-**Filtros:**
-- `Tipo` = "HÁBITO"
-- `Estado` = "Activa"
-- `Recurrente` = true
-- `Hora` = empty
-- `Deadline` = empty
-- `Proyecto.Excluido` ≠ true
+**Configuración:**
+- **Filtros:**
+  - `Tipo` = "META"
+  - `Estado` = "Activa"
+  - `Recurrente` ≠ true
+  - `Hora` = empty
+  - `Deadline` = empty
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Fecha` (ascendente)
+- **Visualización:** Tabla o Calendario
 
-**Orden:**
-- Por `Frecuencia` (diario, semanal, mensual, anual)
-
----
-
-### Vista: **TAREA**
-
-**Fuente:** Base de datos "Acciones"
-
-**Filtros:**
-- `Tipo` = "TAREA"
-- `Estado` = "Activa"
-- `Hora` = empty
-- `Deadline` ≠ empty
-- `Proyecto.Excluido` ≠ true
-
-**Orden:**
-- Por `Deadline` (ascendente)
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Tipo"
 
 ---
 
-### Vista: **EVENTO**
+### Fuente: **HÁBITO**
 
-**Fuente:** Base de datos "Acciones"
+**Tipo:** Linked Database (fuente de "Acciones")
 
-**Filtros:**
-- `Tipo` = "EVENTO"
-- `Estado` = "Activa"
-- `Hora` ≠ empty
-- `Proyecto.Excluido` ≠ true
+**Configuración:**
+- **Filtros:**
+  - `Tipo` = "HÁBITO"
+  - `Estado` = "Activa"
+  - `Recurrente` = true
+  - `Hora` = empty
+  - `Deadline` = empty
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Frecuencia` (diario, semanal, mensual, anual)
+- **Visualización:** Tabla o Lista
 
-**Orden:**
-- Por `Fecha` y `Hora` (ascendente)
-
----
-
-## ⏱️ Vistas por Horizonte Temporal
-
-### Vista: **+Ayer** (Deuda)
-
-**Fuente:** Base de datos "Acciones"
-
-**Filtros:**
-- `Horizonte Temporal` = "+Ayer"
-- `Estado` = "Activa"
-- `Proyecto.Excluido` ≠ true
-
-**Orden:**
-- Por `Fecha` (ascendente - más antiguas primero)
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Tipo"
 
 ---
 
-### Vista: **+Hoy** (Compromiso Activo)
+### Fuente: **TAREA**
 
-**Fuente:** Base de datos "Acciones"
+**Tipo:** Linked Database (fuente de "Acciones")
 
-**Filtros:**
-- `Horizonte Temporal` = "+Hoy"
-- `Estado` = "Activa"
-- `Proyecto.Excluido` ≠ true
+**Configuración:**
+- **Filtros:**
+  - `Tipo` = "TAREA"
+  - `Estado` = "Activa"
+  - `Hora` = empty
+  - `Deadline` ≠ empty
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Deadline` (ascendente)
+- **Visualización:** Tabla o Kanban (por Deadline)
 
-**Orden:**
-- Por `Hora` (ascendente), luego por `Tipo`
-
----
-
-### Vista: **+Semana** (Corto Plazo)
-
-**Fuente:** Base de datos "Acciones"
-
-**Filtros:**
-- `Horizonte Temporal` = "+Semana"
-- `Estado` = "Activa"
-- `Proyecto.Excluido` ≠ true
-
-**Orden:**
-- Por `Fecha` (ascendente)
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Tipo"
 
 ---
 
-### Vista: **+Mes** (Medio Plazo)
+### Fuente: **EVENTO**
 
-**Fuente:** Base de datos "Acciones"
+**Tipo:** Linked Database (fuente de "Acciones")
 
-**Filtros:**
-- `Horizonte Temporal` = "+Mes"
-- `Estado` = "Activa"
-- `Proyecto.Excluido` ≠ true
+**Configuración:**
+- **Filtros:**
+  - `Tipo` = "EVENTO"
+  - `Estado` = "Activa"
+  - `Hora` ≠ empty
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Fecha` y `Hora` (ascendente)
+- **Visualización:** Calendario o Timeline
 
-**Orden:**
-- Por `Fecha` (ascendente)
-
----
-
-### Vista: **+Año** (Largo Plazo)
-
-**Fuente:** Base de datos "Acciones"
-
-**Filtros:**
-- `Horizonte Temporal` = "+Año"
-- `Estado` = "Activa"
-- `Proyecto.Excluido` ≠ true
-
-**Orden:**
-- Por `Fecha` (ascendente)
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Tipo"
 
 ---
 
-## 🔧 Vistas Operativas (Filtros Combinados)
+## ⏱️ Fuentes por Horizonte Temporal (Múltiples Fuentes)
 
-### Vista: **Tareas con Deadline Próximo**
+### Fuente: **+Ayer** (Deuda)
 
-**Fuente:** Base de datos "Acciones"
+**Tipo:** Linked Database (fuente de "Acciones")
 
-**Filtros:**
-- `Tipo` = "TAREA"
-- `Estado` = "Activa"
-- `Deadline` <= dateAdd(now(), 3, "days")
-- `Proyecto.Excluido` ≠ true
+**Configuración:**
+- **Filtros:**
+  - `Horizonte Temporal` = "+Ayer"
+  - `Estado` = "Activa"
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Fecha` (ascendente - más antiguas primero)
+- **Visualización:** Tabla
 
----
-
-### Vista: **Eventos de Hoy**
-
-**Fuente:** Base de datos "Acciones"
-
-**Filtros:**
-- `Tipo` = "EVENTO"
-- `Estado` = "Activa"
-- `Fecha` = today()
-- `Proyecto.Excluido` ≠ true
-
-**Orden:**
-- Por `Hora` (ascendente)
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Horizonte"
 
 ---
 
-### Vista: **Hábitos Diarios**
+### Fuente: **+Hoy** (Compromiso Activo)
 
-**Fuente:** Base de datos "Acciones"
+**Tipo:** Linked Database (fuente de "Acciones")
 
-**Filtros:**
-- `Tipo` = "HÁBITO"
-- `Estado` = "Activa"
-- `Frecuencia` = "@d"
-- `Proyecto.Excluido` ≠ true
+**Configuración:**
+- **Filtros:**
+  - `Horizonte Temporal` = "+Hoy"
+  - `Estado` = "Activa"
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Hora` (ascendente), luego por `Tipo`
+- **Visualización:** Tabla o Lista
+
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Horizonte"
 
 ---
 
-## 📐 Estructura de Página Principal
+### Fuente: **+Semana** (Corto Plazo)
+
+**Tipo:** Linked Database (fuente de "Acciones")
+
+**Configuración:**
+- **Filtros:**
+  - `Horizonte Temporal` = "+Semana"
+  - `Estado` = "Activa"
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Fecha` (ascendente)
+- **Visualización:** Tabla o Calendario
+
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Horizonte"
+
+---
+
+### Fuente: **+Mes** (Medio Plazo)
+
+**Tipo:** Linked Database (fuente de "Acciones")
+
+**Configuración:**
+- **Filtros:**
+  - `Horizonte Temporal` = "+Mes"
+  - `Estado` = "Activa"
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Fecha` (ascendente)
+- **Visualización:** Tabla o Calendario
+
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Horizonte"
+
+---
+
+### Fuente: **+Año** (Largo Plazo)
+
+**Tipo:** Linked Database (fuente de "Acciones")
+
+**Configuración:**
+- **Filtros:**
+  - `Horizonte Temporal` = "+Año"
+  - `Estado` = "Activa"
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Fecha` (ascendente)
+- **Visualización:** Tabla o Timeline
+
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Por Horizonte"
+
+---
+
+## 🔧 Fuentes Operativas (Filtros Combinados)
+
+### Fuente: **Tareas con Deadline Próximo**
+
+**Tipo:** Linked Database (fuente de "Acciones")
+
+**Configuración:**
+- **Filtros:**
+  - `Tipo` = "TAREA"
+  - `Estado` = "Activa"
+  - `Deadline` <= dateAdd(now(), 3, "days")
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Deadline` (ascendente)
+- **Visualización:** Tabla
+
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Operativas"
+
+---
+
+### Fuente: **Eventos de Hoy**
+
+**Tipo:** Linked Database (fuente de "Acciones")
+
+**Configuración:**
+- **Filtros:**
+  - `Tipo` = "EVENTO"
+  - `Estado` = "Activa"
+  - `Fecha` = today()
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por `Hora` (ascendente)
+- **Visualización:** Lista o Timeline
+
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Operativas"
+
+---
+
+### Fuente: **Hábitos Diarios**
+
+**Tipo:** Linked Database (fuente de "Acciones")
+
+**Configuración:**
+- **Filtros:**
+  - `Tipo` = "HÁBITO"
+  - `Estado` = "Activa"
+  - `Frecuencia` = "@d"
+  - `Proyecto.Excluido` ≠ true
+- **Orden:**
+  - Por nombre (alfabético)
+- **Visualización:** Tabla o Lista
+
+**Dónde crear:** En la página "Dashboard SYSTEC" → Sección "Operativas"
+
+---
+
+## 📐 Estructura de Página Principal con Múltiples Fuentes
 
 ### Dashboard SYSTEC
+
+**Todas las secciones usan fuentes vinculadas (linked databases) de la misma base de datos "Acciones".**
 
 ```
 📊 SYSTEC Dashboard
 │
-├── 🎯 Por Tipo
-│   ├── 📝 Ideas
-│   ├── 🎯 Metas
-│   ├── 🔁 Hábitos
-│   ├── ✅ Tareas
-│   └── 📅 Eventos
+├── 🎯 Por Tipo (5 fuentes vinculadas)
+│   ├── 📝 Ideas → Fuente de "Acciones" con filtro Tipo=IDEA
+│   ├── 🎯 Metas → Fuente de "Acciones" con filtro Tipo=META
+│   ├── 🔁 Hábitos → Fuente de "Acciones" con filtro Tipo=HÁBITO
+│   ├── ✅ Tareas → Fuente de "Acciones" con filtro Tipo=TAREA
+│   └── 📅 Eventos → Fuente de "Acciones" con filtro Tipo=EVENTO
 │
-├── ⏱️ Por Horizonte
-│   ├── ⏪ +Ayer (Deuda)
-│   ├── 📌 +Hoy
-│   ├── 📆 +Semana
-│   ├── 📅 +Mes
-│   └── 🗓️ +Año
+├── ⏱️ Por Horizonte (5 fuentes vinculadas)
+│   ├── ⏪ +Ayer → Fuente de "Acciones" con filtro Horizonte=+Ayer
+│   ├── 📌 +Hoy → Fuente de "Acciones" con filtro Horizonte=+Hoy
+│   ├── 📆 +Semana → Fuente de "Acciones" con filtro Horizonte=+Semana
+│   ├── 📅 +Mes → Fuente de "Acciones" con filtro Horizonte=+Mes
+│   └── 🗓️ +Año → Fuente de "Acciones" con filtro Horizonte=+Año
 │
-├── 🔧 Operativas
-│   ├── Tareas Urgentes
-│   ├── Eventos de Hoy
-│   └── Hábitos Diarios
+├── 🔧 Operativas (3 fuentes vinculadas)
+│   ├── Tareas Urgentes → Fuente con filtros combinados
+│   ├── Eventos de Hoy → Fuente con filtros combinados
+│   └── Hábitos Diarios → Fuente con filtros combinados
 │
 └── 📁 Proyectos
-    └── [Lista de proyectos]
+    └── [Base de datos relacionada "Proyectos"]
 ```
+
+**Total: 13 fuentes vinculadas de la misma base de datos "Acciones"**
+
+Cada fuente muestra los mismos datos pero con diferentes filtros, orden y visualización. Todos los cambios se sincronizan automáticamente.
 
 ---
 
@@ -459,16 +525,32 @@ Base de datos que almacena las vistas predefinidas del sistema.
 
 ## 📝 Checklist de Migración
 
-- [ ] Crear base de datos "Acciones" con todas las propiedades
-- [ ] Crear base de datos "Proyectos"
-- [ ] Configurar fórmulas de clasificación automática
-- [ ] Crear todas las vistas filtradas
+- [ ] Crear **una única** base de datos "Acciones" con todas las propiedades
+- [ ] Crear base de datos "Proyectos" (relacionada)
+- [ ] Configurar fórmulas de clasificación automática (Tipo, Horizonte Temporal)
+- [ ] Crear **13 fuentes vinculadas** de "Acciones" en el Dashboard:
+  - [ ] 5 fuentes por Tipo (IDEA, META, HÁBITO, TAREA, EVENTO)
+  - [ ] 5 fuentes por Horizonte (+Ayer, +Hoy, +Semana, +Mes, +Año)
+  - [ ] 3 fuentes operativas (Tareas Urgentes, Eventos Hoy, Hábitos Diarios)
+- [ ] Configurar filtros específicos en cada fuente
+- [ ] Configurar orden y visualización en cada fuente
 - [ ] Configurar templates para cada tipo
 - [ ] Migrar acciones existentes desde Todoist
-- [ ] Configurar dashboard principal
+- [ ] Verificar sincronización automática entre fuentes
 - [ ] Probar flujo de captura → decisión → ejecución
 - [ ] Configurar automatizaciones (opcional)
 - [ ] Documentar proceso para el equipo (si aplica)
+
+## 🎯 Ventaja Clave de Múltiples Fuentes
+
+**Una acción, múltiples vistas, sincronización automática:**
+
+- Editas una acción en cualquier fuente → se actualiza en todas
+- Cambias el tipo de una acción → aparece automáticamente en la fuente correcta
+- Completas una tarea → desaparece de todas las fuentes activas
+- Agregas una fecha → se recalcula el horizonte temporal en todas las fuentes
+
+**No necesitas mantener múltiples bases de datos. Todo está en una, mostrado de diferentes formas.**
 
 ---
 
