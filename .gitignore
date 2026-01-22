@@ -17,3 +17,7 @@ desktop.ini
 
 # Archivos de workspace específicos del editor
 *.code-workspace
+
+# MkDocs
+site/
+.cache/

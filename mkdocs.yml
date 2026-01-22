@@ -1,0 +1,70 @@
+site_name: SYSTEC - Sistema Temporal de Productividad
+site_description: Sistema de productividad en Todoist basado en relaciones temporales reales
+site_author: dalarconrub
+repo_url: https://github.com/dalarconrub/systec
+repo_name: dalarconrub/systec
+
+use_directory_urls: false
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+nav:
+  - Inicio: index.md
+  - Documentación:
+    - 00-filosofia-del-sistema.md
+    - 01-tablas-canonicas.md
+    - 02-canvas-arbol-decision.md
+    - 03-casos-de-uso.md
+    - 04-flujo-de-uso.md
+  - Modelo:
+    - model/01-modelo-conceptual.md
+    - model/02-arbol-decision.md
+    - model/03-reglas-modelado.md
+    - model/04-filtros-todoist.md
+    - model/05-casos-ejemplo.md
+    - model/06-uso-diario.md
+    - model/07-etiquetas-recurrencia.md
+    - model/08-etiquetas-operativas.md
+    - model/09-systec-canvas-recurrencias.md
+    - model/10-precedencia-etiquetas.md
+
+copyright: Copyright &copy; 2025 dalarconrub
