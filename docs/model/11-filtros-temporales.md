@@ -1,82 +1,91 @@
 
-# SYSTEC — Filtros temporales canónicos (documentación)
+# SYSTEC — Filtros temporales sin solapamientos (versión refinada)
 
 ---
 
-## 1. Propósito de estos filtros
+## 1. Objetivo de esta revisión
 
-Estos filtros definen **horizontes temporales de auditoría y planificación** en SYSTEC.  
-No clasifican el tipo de acción (Idea, Meta, Tarea, Hábito, Evento), sino que responden a:
+Estos filtros temporales han sido **ajustados deliberadamente** para cumplir un requisito clave en SYSTEC:
 
-> **¿En qué horizonte temporal cae esta acción respecto al presente?**
+> **Un elemento no puede aparecer en más de un horizonte temporal.**
 
-Todos los filtros están pensados para ser:
-- claros,
-- estables,
-- y utilizables directamente en Todoist.
+A diferencia de los filtros “naturales” de Todoist, aquí se prioriza:
+- exclusividad estricta,
+- lectura clara,
+- y coherencia lógica entre vistas.
 
 ---
 
-## 2. Hasta Ayer
+## 2. Principio de no solapamiento
+
+Los horizontes temporales se definen como **tramos consecutivos y disjuntos**:
+
+```
+
+Antes de Ayer → Ayer y Hoy → Esta Semana → Este Mes → Este Año
+
+````
+
+Cada filtro:
+- **incluye solo su tramo**
+- **excluye explícitamente** los anteriores y los siguientes
+
+---
+
+## 3. Antes de Ayer
 
 ### Nombre SYSTEC
-**Hasta Ayer**
+**Antes de Ayer**
 
 ### Filtro Todoist
 ```text
-overdue
+overdue & !yesterday
 ````
 
 ### Definición
 
-Incluye todas las acciones cuya fecha **es anterior a hoy** y no se han completado.
+Incluye todas las acciones vencidas **anteriores a ayer**.
 
 ### Lectura SYSTEC
 
-> Deuda temporal acumulada.
+> Deuda histórica acumulada.
 
 ### Uso recomendado
 
-* Revisión diaria al comenzar el día
-* Detección de sobrecarga o mala planificación
-* Replanificación o cancelación consciente
+* Revisión semanal o mensual
+* Detección de tareas obsoletas
+* Limpieza del sistema
 
 ---
 
-## 3. Este Día
+## 4. Ayer y Hoy
 
 ### Nombre SYSTEC
 
-**Este Día**
+**Ayer y Hoy**
 
 ### Filtro Todoist
 
 ```text
-today
+yesterday | today
 ```
 
 ### Definición
 
-Incluye todas las acciones asignadas **al día actual**.
+Incluye las acciones asignadas **a ayer o al día actual**.
 
 ### Incluye
 
-* Tareas con fecha hoy
-* Eventos con hora hoy
-* Metas fijadas para hoy
-
-### Excluye
-
-* Acciones vencidas (Hasta Ayer)
-* Acciones futuras
+* Acciones completadas tarde
+* Compromisos activos inmediatos
 
 ### Lectura SYSTEC
 
-> Compromiso activo.
+> Zona caliente de ejecución y ajuste.
 
 ---
 
-## 4. Esta Semana
+## 5. Esta Semana
 
 ### Nombre SYSTEC
 
@@ -85,30 +94,21 @@ Incluye todas las acciones asignadas **al día actual**.
 ### Filtro Todoist
 
 ```text
-due before: next week
+due after last week & due before: next week
 ```
 
 ### Definición
 
-Incluye todas las acciones asignadas **a cualquier día de la semana actual**,
-hasta el inicio de la próxima semana.
-
-### Incluye
-
-* Tareas de lunes a domingo de la semana en curso
-* Acciones ya pasadas de esta misma semana
-
-### Excluye
-
-* Acciones de semanas posteriores
+Incluye las acciones planificadas para la **semana natural en curso**
+(excluyendo ayer y hoy).
 
 ### Lectura SYSTEC
 
-> Horizonte semanal natural.
+> Horizonte semanal limpio, sin pasado inmediato.
 
 ---
 
-## 5. Este Mes
+## 6. Este Mes
 
 ### Nombre SYSTEC
 
@@ -125,23 +125,13 @@ due after: next week & due before: end of month
 Incluye las acciones previstas para **el resto del mes actual**,
 excluyendo la semana en curso.
 
-### Incluye
-
-* Acciones del tramo medio del mes
-* Compromisos sin urgencia semanal
-
-### Excluye
-
-* Acciones de esta semana
-* Acciones de meses posteriores
-
 ### Lectura SYSTEC
 
-> Planificación mensual sin presión inmediata.
+> Planificación mensual sin presión semanal.
 
 ---
 
-## 6. Este Año
+## 7. Este Año
 
 ### Nombre SYSTEC
 
@@ -155,18 +145,8 @@ due after: end of month & due before: next year
 
 ### Definición
 
-Incluye acciones previstas para **el resto del año natural**,
-más allá del mes actual.
-
-### Incluye
-
-* Objetivos de largo recorrido
-* Compromisos estratégicos
-
-### Excluye
-
-* Acciones del mes actual
-* Acciones del año siguiente
+Incluye las acciones previstas para **el resto del año natural**,
+excluyendo el mes actual.
 
 ### Lectura SYSTEC
 
@@ -174,36 +154,37 @@ más allá del mes actual.
 
 ---
 
-## 7. Tabla resumen
+## 8. Tabla resumen (sin solapamientos)
 
-| Horizonte SYSTEC | Filtro Todoist                                    |
-| ---------------- | ------------------------------------------------- |
-| Hasta Ayer       | `overdue`                                         |
-| Este Día         | `today`                                           |
-| Esta Semana      | `due before: next week`                           |
-| Este Mes         | `due after: next week & due before: end of month` |
-| Este Año         | `due after: end of month & due before: next year` |
+| Horizonte SYSTEC | Filtro Todoist                                    |        |
+| ---------------- | ------------------------------------------------- | ------ |
+| Antes de Ayer    | `overdue & !yesterday`                            |        |
+| Ayer y Hoy       | `yesterday                                        | today` |
+| Esta Semana      | `due after last week & due before: next week`     |        |
+| Este Mes         | `due after: next week & due before: end of month` |        |
+| Este Año         | `due after: end of month & due before: next year` |        |
 
 ---
 
-## 8. Regla de uso en SYSTEC
+## 9. Regla de uso en SYSTEC
 
-El uso correcto siempre sigue este orden:
+El flujo correcto es siempre:
 
-1. **Clasificar por tipo** (SYSTEC)
-2. **Visualizar por horizonte temporal**
+1. **Clasificar por tipo** (Idea, Meta, Tarea, Hábito, Evento)
+2. **Visualizar por horizonte temporal exclusivo**
 
 Ejemplos:
 
-* *Tareas · Este Día*
+* *Tareas · Ayer y Hoy*
 * *Eventos · Esta Semana*
 * *Metas · Este Año*
 
 ---
 
-## 9. Regla final
+## 10. Regla final
 
-> **En SYSTEC, los filtros temporales no dicen qué es una acción,
-> dicen cuándo entra en juego.**
+> **En SYSTEC, los horizontes temporales no se pisan.
+> Cada acción vive en un único tramo del tiempo.**
 
-Nunca se mezclan con la ontología.
+Si aparece en dos, el filtro está mal definido.
+
