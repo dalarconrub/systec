@@ -1,6 +1,7 @@
 site_name: SYSTEC - Sistema Temporal de Productividad
 site_description: Sistema de productividad en Todoist basado en relaciones temporales reales
 site_author: dalarconrub
+site_url: https://dalarconrub.github.io/systec/
 repo_url: https://github.com/dalarconrub/systec
 repo_name: dalarconrub/systec
 
