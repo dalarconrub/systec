@@ -4,7 +4,7 @@ site_author: dalarconrub
 repo_url: https://github.com/dalarconrub/systec
 repo_name: dalarconrub/systec
 
-use_directory_urls: false
+use_directory_urls: true
 
 theme:
   name: material
@@ -26,6 +26,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.code.annotate
@@ -50,21 +51,21 @@ markdown_extensions:
 nav:
   - Inicio: index.md
   - Documentación:
-    - 00-filosofia-del-sistema.md
-    - 01-tablas-canonicas.md
-    - 02-canvas-arbol-decision.md
-    - 03-casos-de-uso.md
-    - 04-flujo-de-uso.md
+    - Filosofía del sistema: 00-filosofia-del-sistema.md
+    - Tablas canónicas: 01-tablas-canonicas.md
+    - Canvas árbol de decisión: 02-canvas-arbol-decision.md
+    - Casos de uso: 03-casos-de-uso.md
+    - Flujo de uso: 04-flujo-de-uso.md
   - Modelo:
-    - model/01-modelo-conceptual.md
-    - model/02-arbol-decision.md
-    - model/03-reglas-modelado.md
-    - model/04-filtros-todoist.md
-    - model/05-casos-ejemplo.md
-    - model/06-uso-diario.md
-    - model/07-etiquetas-recurrencia.md
-    - model/08-etiquetas-operativas.md
-    - model/09-systec-canvas-recurrencias.md
-    - model/10-precedencia-etiquetas.md
+    - Modelo conceptual: model/01-modelo-conceptual.md
+    - Árbol de decisión: model/02-arbol-decision.md
+    - Reglas de modelado: model/03-reglas-modelado.md
+    - Filtros Todoist: model/04-filtros-todoist.md
+    - Casos ejemplo: model/05-casos-ejemplo.md
+    - Uso diario: model/06-uso-diario.md
+    - Etiquetas de recurrencia: model/07-etiquetas-recurrencia.md
+    - Etiquetas operativas: model/08-etiquetas-operativas.md
+    - Canvas recurrencias: model/09-systec-canvas-recurrencias.md
+    - Precedencia etiquetas: model/10-precedencia-etiquetas.md
 
 copyright: Copyright &copy; 2025 dalarconrub
