@@ -4,6 +4,12 @@ site_author: dalarconrub
 repo_url: https://github.com/dalarconrub/systec
 repo_name: dalarconrub/systec
 
+# Directorio donde están los archivos markdown (por defecto es 'docs')
+docs_dir: docs
+
+# Directorio donde se genera el sitio (por defecto es 'site')
+site_dir: site
+
 use_directory_urls: true
 
 theme:
