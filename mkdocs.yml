@@ -51,12 +51,14 @@ markdown_extensions:
 nav:
   - Inicio: index.md
   - Documentación:
+    - Documentación: docs.md
     - Filosofía del sistema: 00-filosofia-del-sistema.md
     - Tablas canónicas: 01-tablas-canonicas.md
     - Canvas árbol de decisión: 02-canvas-arbol-decision.md
     - Casos de uso: 03-casos-de-uso.md
     - Flujo de uso: 04-flujo-de-uso.md
   - Modelo:
+    - Modelo: model/model.md
     - Modelo conceptual: model/01-modelo-conceptual.md
     - Árbol de decisión: model/02-arbol-decision.md
     - Reglas de modelado: model/03-reglas-modelado.md
