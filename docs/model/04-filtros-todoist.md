@@ -274,7 +274,7 @@ Muestra todas las acciones que vencen después del final del mes actual y antes 
 ### Filtro Todoist
 
 ```text
-(!#Z-* & !search:*) & due after: end of month & due before: próximo año
+(!#Z-* & !search:*) & due after: end of month & due before: new year's eve
 ```
 
 ### Uso
@@ -291,7 +291,7 @@ Vista de horizonte largo. Útil para planificación estratégica y revisión anu
 | Para Hoy     | `(!#Z-* & !search:*) & today`                                              | Vista del día          |
 | Esta Semana  | `(!#Z-* & !search:*) & due before: next week`                              | Vista semanal          |
 | Este Mes     | `(!#Z-* & !search:*) & due before: end of month`                           | Vista mensual          |
-| Este Año     | `(!#Z-* & !search:*) & due after: end of month & due before: próximo año`   | Vista anual            |
+| Este Año     | `(!#Z-* & !search:*) & due after: end of month & due before: new year's eve`   | Vista anual            |
 
 ---
 
