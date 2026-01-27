@@ -20,7 +20,7 @@ Netlify es muy fácil de usar y funciona excelente con MkDocs.
 
 4. **Deploy:**
    - Netlify desplegará automáticamente en cada push a `main`
-   - Tu sitio estará disponible en: `https://tu-sitio.netlify.app`
+   - Tu sitio estará disponible en: `https://systec.netlify.app/`
    - Puedes configurar un dominio personalizado si quieres
 
 ### Ventajas:
@@ -116,6 +116,8 @@ Solo necesitas:
 1. Crear cuenta en Netlify
 2. Conectar el repositorio
 3. ¡Listo! Se desplegará automáticamente
+
+**Sitio activo:** [https://systec.netlify.app/](https://systec.netlify.app/)
 
 ---
 

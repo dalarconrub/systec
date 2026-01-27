@@ -9,6 +9,8 @@ relaciones temporales reales de la herramienta.
 - Todo vive en Todoist
 - El calendario es solo una vista
 
+**📖 Documentación en línea:** [https://systec.netlify.app/](https://systec.netlify.app/)
+
 Consulta la carpeta `docs/` para el tutorial completo.
 
 
