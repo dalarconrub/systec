@@ -4,7 +4,10 @@
 no date & no deadline
 
 ## Meta
-!recurring & no time & no deadline
+
+> **Nota:** Se usa **doble negación `!!no time`** por un comportamiento específico del parser de filtros de Todoist. Lógicamente es equivalente a `no time`, pero **debe escribirse así** para que siempre funcione como se espera.
+
+!recurring & !!no time & !no deadline
 
 ## Hábito
 recurring & no time & no deadline
