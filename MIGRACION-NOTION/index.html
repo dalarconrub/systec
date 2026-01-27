@@ -1,0 +1,2347 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Sistema de productividad en Todoist basado en relaciones temporales reales">
+      
+      
+        <meta name="author" content="dalarconrub">
+      
+      
+        <link rel="canonical" href="https://dalarconrub.github.io/systec/MIGRACION-NOTION/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Migración de SYSTEC a Notion - SYSTEC - Sistema Temporal de Productividad</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#migracion-de-systec-a-notion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SYSTEC - Sistema Temporal de Productividad" class="md-header__button md-logo" aria-label="SYSTEC - Sistema Temporal de Productividad" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SYSTEC - Sistema Temporal de Productividad
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migración de SYSTEC a Notion
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dalarconrub/systec" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dalarconrub/systec
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../docs/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Documentación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../model/model/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modelo
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SYSTEC - Sistema Temporal de Productividad" class="md-nav__button md-logo" aria-label="SYSTEC - Sistema Temporal de Productividad" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SYSTEC - Sistema Temporal de Productividad
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dalarconrub/systec" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dalarconrub/systec
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-filosofia-del-sistema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filosofía del sistema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-tablas-canonicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tablas canónicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-canvas-arbol-decision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Canvas árbol de decisión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-casos-de-uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Casos de uso
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-flujo-de-uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flujo de uso
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/01-modelo-conceptual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo conceptual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/02-arbol-decision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Árbol de decisión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/03-reglas-modelado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de modelado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/04-filtros-todoist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filtros Todoist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/05-casos-ejemplo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Casos ejemplo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/06-uso-diario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uso diario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/07-etiquetas-recurrencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiquetas de recurrencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/08-etiquetas-operativas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiquetas operativas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/09-systec-canvas-recurrencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Canvas recurrencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/10-precedencia-etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Precedencia etiquetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/11-filtros-temporales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filtros temporales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/12-filtros-operativos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filtros operativos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/13-migracion-notion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migración a Notion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-una-base-de-datos-multiples-fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Arquitectura: Una Base de Datos, Múltiples Fuentes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Arquitectura: Una Base de Datos, Múltiples Fuentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#concepto-clave-linked-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concepto Clave: Linked Databases
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-de-datos-unica-acciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗄️ Base de Datos Única: Acciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗄️ Base de Datos Única: Acciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propiedades-requeridas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades Requeridas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulas-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas Clave
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fórmulas Clave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-tipo-clasificacion-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Tipo (Clasificación Automática)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-horizonte-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Horizonte Temporal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-de-datos-relacionada-proyectos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Base de Datos Relacionada: Proyectos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-multiples-fuentes-de-la-base-de-datos-acciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Crear Múltiples Fuentes de la Base de Datos "Acciones"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Crear Múltiples Fuentes de la Base de Datos &#34;Acciones&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-crear-una-fuente-vinculada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo Crear una Fuente Vinculada
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes-por-tipo-multiples-fuentes-de-acciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Fuentes por Tipo (Múltiples Fuentes de "Acciones")
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Fuentes por Tipo (Múltiples Fuentes de &#34;Acciones&#34;)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuente-idea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: IDEA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-meta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: META
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-habito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: HÁBITO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-tarea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: TAREA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-evento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: EVENTO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes-por-horizonte-temporal-multiples-fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱️ Fuentes por Horizonte Temporal (Múltiples Fuentes)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ Fuentes por Horizonte Temporal (Múltiples Fuentes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuente-ayer-deuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: +Ayer (Deuda)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-hoy-compromiso-activo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: +Hoy (Compromiso Activo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-semana-corto-plazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: +Semana (Corto Plazo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-mes-medio-plazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: +Mes (Medio Plazo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-ano-largo-plazo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: +Año (Largo Plazo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes-operativas-filtros-combinados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Fuentes Operativas (Filtros Combinados)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Fuentes Operativas (Filtros Combinados)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuente-tareas-con-deadline-proximo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: Tareas con Deadline Próximo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-eventos-de-hoy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: Eventos de Hoy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuente-habitos-diarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuente: Hábitos Diarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-pagina-principal-con-multiples-fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📐 Estructura de Página Principal con Múltiples Fuentes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📐 Estructura de Página Principal con Múltiples Fuentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard-systec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard SYSTEC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-diario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 Flujo de Trabajo Diario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Flujo de Trabajo Diario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-captura-idea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Captura (IDEA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Decisión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ejecucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ejecución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-revision-semanal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Revisión Semanal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templates-de-notion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Templates de Notion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Templates de Notion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#template-nueva-accion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Template: Nueva Acción
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-evento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Template: Evento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-tarea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Template: Tarea
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-habito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Template: Hábito
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relaciones-y-rollups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Relaciones y Rollups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 Relaciones y Rollups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relacion-acciones-proyectos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relación: Acciones → Proyectos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacion-proyectos-acciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relación: Proyectos → Acciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ventajas-de-notion-vs-todoist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Ventajas de Notion vs Todoist
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Ventajas de Notion vs Todoist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ventajas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Ventajas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consideraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Consideraciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatizaciones-recomendadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Automatizaciones Recomendadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Automatizaciones Recomendadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#con-zapiermakecom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Con Zapier/Make.com
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#con-api-de-notion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Con API de Notion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-de-migracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Checklist de Migración
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ventaja-clave-de-multiples-fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Ventaja Clave de Múltiples Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principios-systec-mantenidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Principios SYSTEC Mantenidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="migracion-de-systec-a-notion">Migración de SYSTEC a Notion</h1>
+<h2 id="objetivo">🎯 Objetivo</h2>
+<p>Migrar el sistema de productividad SYSTEC (basado en propiedades temporales de Todoist) a Notion usando <strong>una única base de datos</strong> con <strong>múltiples fuentes (linked databases)</strong> para mantener la lógica temporal y la clasificación automática.</p>
+<hr />
+<h2 id="arquitectura-una-base-de-datos-multiples-fuentes">📊 Arquitectura: Una Base de Datos, Múltiples Fuentes</h2>
+<h3 id="concepto-clave-linked-databases">Concepto Clave: Linked Databases</h3>
+<p>En Notion, puedes crear <strong>múltiples fuentes</strong> de la misma base de datos. Cada fuente es una "vista vinculada" que puede tener:
+- Sus propios filtros
+- Su propio ordenamiento
+- Su propia agrupación
+- Su propia visualización (tabla, kanban, calendario, etc.)</p>
+<p><strong>Ventaja:</strong> Todos los cambios se sincronizan automáticamente entre todas las fuentes.</p>
+<hr />
+<h2 id="base-de-datos-unica-acciones">🗄️ Base de Datos Única: <strong>Acciones</strong></h2>
+<p>Esta es la <strong>única base de datos</strong> que necesitas crear. Todas las vistas serán fuentes vinculadas de esta base de datos.</p>
+<h4 id="propiedades-requeridas">Propiedades Requeridas</h4>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Título</strong></td>
+<td>Title</td>
+<td>Nombre de la acción</td>
+</tr>
+<tr>
+<td><strong>Tipo</strong></td>
+<td>Select</td>
+<td>IDEA, META, HÁBITO, TAREA, EVENTO (calculado)</td>
+</tr>
+<tr>
+<td><strong>Fecha</strong></td>
+<td>Date</td>
+<td>Fecha de ejecución/compromiso</td>
+</tr>
+<tr>
+<td><strong>Hora</strong></td>
+<td>Date (con hora)</td>
+<td>Hora específica (solo para eventos)</td>
+</tr>
+<tr>
+<td><strong>Deadline</strong></td>
+<td>Date</td>
+<td>Fecha límite (solo para tareas)</td>
+</tr>
+<tr>
+<td><strong>Recurrente</strong></td>
+<td>Checkbox</td>
+<td>Si es una acción recurrente</td>
+</tr>
+<tr>
+<td><strong>Frecuencia</strong></td>
+<td>Select</td>
+<td>@d (diario), @s (semanal), @m (mensual), @a (anual)</td>
+</tr>
+<tr>
+<td><strong>Tipo Manual</strong></td>
+<td>Select</td>
+<td>Override manual del tipo (opcional)</td>
+</tr>
+<tr>
+<td><strong>Horizonte Temporal</strong></td>
+<td>Formula</td>
+<td>+Ayer, +Hoy, +Semana, +Mes, +Año (calculado)</td>
+</tr>
+<tr>
+<td><strong>Estado</strong></td>
+<td>Select</td>
+<td>Activa, Completada, Cancelada</td>
+</tr>
+<tr>
+<td><strong>Proyecto</strong></td>
+<td>Relation</td>
+<td>Relación con base de datos "Proyectos"</td>
+</tr>
+<tr>
+<td><strong>Notas</strong></td>
+<td>Text</td>
+<td>Información adicional</td>
+</tr>
+</tbody>
+</table>
+<h4 id="formulas-clave">Fórmulas Clave</h4>
+<h5 id="1-tipo-clasificacion-automatica">1. Tipo (Clasificación Automática)</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>if(
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  prop(&quot;Tipo Manual&quot;) != empty(),
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  prop(&quot;Tipo Manual&quot;),
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  if(
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    prop(&quot;Hora&quot;) != empty(),
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;EVENTO&quot;,
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    if(
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>      prop(&quot;Deadline&quot;) != empty(),
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>      &quot;TAREA&quot;,
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>      if(
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        prop(&quot;Recurrente&quot;),
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        &quot;HÁBITO&quot;,
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        if(
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>          prop(&quot;Fecha&quot;) == empty() and prop(&quot;Deadline&quot;) == empty(),
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>          &quot;IDEA&quot;,
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>          &quot;META&quot;
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        )
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>      )
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    )
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>  )
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>)
+</code></pre></div>
+<p><strong>Lógica de precedencia:</strong>
+1. Si tiene <code>Tipo Manual</code> → usar ese
+2. Si tiene <code>Hora</code> → EVENTO
+3. Si tiene <code>Deadline</code> → TAREA
+4. Si es <code>Recurrente</code> → HÁBITO
+5. Si no tiene fecha ni deadline → IDEA
+6. Resto → META</p>
+<h5 id="2-horizonte-temporal">2. Horizonte Temporal</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>if(
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  prop(&quot;Fecha&quot;) &lt; dateSubtract(now(), 1, &quot;days&quot;),
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  &quot;+Ayer&quot;,
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  if(
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    prop(&quot;Fecha&quot;) == dateSubtract(now(), 0, &quot;days&quot;),
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    &quot;+Hoy&quot;,
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    if(
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>      prop(&quot;Fecha&quot;) &lt;= dateAdd(now(), 7, &quot;days&quot;),
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>      &quot;+Semana&quot;,
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>      if(
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        prop(&quot;Fecha&quot;) &lt;= dateAdd(now(), 30, &quot;days&quot;),
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        &quot;+Mes&quot;,
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        &quot;+Año&quot;
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>      )
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    )
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  )
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>)
+</code></pre></div>
+<hr />
+<h2 id="base-de-datos-relacionada-proyectos">🔗 Base de Datos Relacionada: <strong>Proyectos</strong></h2>
+<p>Para gestionar proyectos y exclusiones (equivalente a <code>!#Z-*</code> en Todoist).</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre</strong></td>
+<td>Title</td>
+<td>Nombre del proyecto</td>
+</tr>
+<tr>
+<td><strong>Excluido</strong></td>
+<td>Checkbox</td>
+<td>Si está fuera del sistema SYSTEC</td>
+</tr>
+<tr>
+<td><strong>Acciones</strong></td>
+<td>Relation</td>
+<td>Relación con "Acciones"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="crear-multiples-fuentes-de-la-base-de-datos-acciones">📋 Crear Múltiples Fuentes de la Base de Datos "Acciones"</h2>
+<h3 id="como-crear-una-fuente-vinculada">Cómo Crear una Fuente Vinculada</h3>
+<ol>
+<li>Ve a la base de datos "Acciones"</li>
+<li>Click en los <code>...</code> (tres puntos) en la esquina superior derecha</li>
+<li>Selecciona "Copy link"</li>
+<li>En la página donde quieres la vista, escribe <code>/linked</code> y selecciona "Create linked database"</li>
+<li>Pega el link de la base de datos</li>
+<li>Configura los filtros, orden y visualización específicos</li>
+</ol>
+<p><strong>Resultado:</strong> Tienes la misma base de datos mostrada en múltiples lugares, cada una con su propia configuración.</p>
+<hr />
+<h2 id="fuentes-por-tipo-multiples-fuentes-de-acciones">📋 Fuentes por Tipo (Múltiples Fuentes de "Acciones")</h2>
+<h3 id="fuente-idea">Fuente: <strong>IDEA</strong></h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Tipo</code> = "IDEA"
+  - <code>Estado</code> = "Activa"
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por fecha de creación (más recientes primero)
+- <strong>Visualización:</strong> Tabla o Lista</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Tipo"</p>
+<hr />
+<h3 id="fuente-meta">Fuente: <strong>META</strong></h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Tipo</code> = "META"
+  - <code>Estado</code> = "Activa"
+  - <code>Recurrente</code> ≠ true
+  - <code>Hora</code> = empty
+  - <code>Deadline</code> = empty
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Fecha</code> (ascendente)
+- <strong>Visualización:</strong> Tabla o Calendario</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Tipo"</p>
+<hr />
+<h3 id="fuente-habito">Fuente: <strong>HÁBITO</strong></h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Tipo</code> = "HÁBITO"
+  - <code>Estado</code> = "Activa"
+  - <code>Recurrente</code> = true
+  - <code>Hora</code> = empty
+  - <code>Deadline</code> = empty
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Frecuencia</code> (diario, semanal, mensual, anual)
+- <strong>Visualización:</strong> Tabla o Lista</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Tipo"</p>
+<hr />
+<h3 id="fuente-tarea">Fuente: <strong>TAREA</strong></h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Tipo</code> = "TAREA"
+  - <code>Estado</code> = "Activa"
+  - <code>Hora</code> = empty
+  - <code>Deadline</code> ≠ empty
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Deadline</code> (ascendente)
+- <strong>Visualización:</strong> Tabla o Kanban (por Deadline)</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Tipo"</p>
+<hr />
+<h3 id="fuente-evento">Fuente: <strong>EVENTO</strong></h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Tipo</code> = "EVENTO"
+  - <code>Estado</code> = "Activa"
+  - <code>Hora</code> ≠ empty
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Fecha</code> y <code>Hora</code> (ascendente)
+- <strong>Visualización:</strong> Calendario o Timeline</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Tipo"</p>
+<hr />
+<h2 id="fuentes-por-horizonte-temporal-multiples-fuentes">⏱️ Fuentes por Horizonte Temporal (Múltiples Fuentes)</h2>
+<h3 id="fuente-ayer-deuda">Fuente: <strong>+Ayer</strong> (Deuda)</h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Horizonte Temporal</code> = "+Ayer"
+  - <code>Estado</code> = "Activa"
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Fecha</code> (ascendente - más antiguas primero)
+- <strong>Visualización:</strong> Tabla</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Horizonte"</p>
+<hr />
+<h3 id="fuente-hoy-compromiso-activo">Fuente: <strong>+Hoy</strong> (Compromiso Activo)</h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Horizonte Temporal</code> = "+Hoy"
+  - <code>Estado</code> = "Activa"
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Hora</code> (ascendente), luego por <code>Tipo</code>
+- <strong>Visualización:</strong> Tabla o Lista</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Horizonte"</p>
+<hr />
+<h3 id="fuente-semana-corto-plazo">Fuente: <strong>+Semana</strong> (Corto Plazo)</h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Horizonte Temporal</code> = "+Semana"
+  - <code>Estado</code> = "Activa"
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Fecha</code> (ascendente)
+- <strong>Visualización:</strong> Tabla o Calendario</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Horizonte"</p>
+<hr />
+<h3 id="fuente-mes-medio-plazo">Fuente: <strong>+Mes</strong> (Medio Plazo)</h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Horizonte Temporal</code> = "+Mes"
+  - <code>Estado</code> = "Activa"
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Fecha</code> (ascendente)
+- <strong>Visualización:</strong> Tabla o Calendario</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Horizonte"</p>
+<hr />
+<h3 id="fuente-ano-largo-plazo">Fuente: <strong>+Año</strong> (Largo Plazo)</h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Horizonte Temporal</code> = "+Año"
+  - <code>Estado</code> = "Activa"
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Fecha</code> (ascendente)
+- <strong>Visualización:</strong> Tabla o Timeline</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Por Horizonte"</p>
+<hr />
+<h2 id="fuentes-operativas-filtros-combinados">🔧 Fuentes Operativas (Filtros Combinados)</h2>
+<h3 id="fuente-tareas-con-deadline-proximo">Fuente: <strong>Tareas con Deadline Próximo</strong></h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Tipo</code> = "TAREA"
+  - <code>Estado</code> = "Activa"
+  - <code>Deadline</code> &lt;= dateAdd(now(), 3, "days")
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Deadline</code> (ascendente)
+- <strong>Visualización:</strong> Tabla</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Operativas"</p>
+<hr />
+<h3 id="fuente-eventos-de-hoy">Fuente: <strong>Eventos de Hoy</strong></h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Tipo</code> = "EVENTO"
+  - <code>Estado</code> = "Activa"
+  - <code>Fecha</code> = today()
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por <code>Hora</code> (ascendente)
+- <strong>Visualización:</strong> Lista o Timeline</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Operativas"</p>
+<hr />
+<h3 id="fuente-habitos-diarios">Fuente: <strong>Hábitos Diarios</strong></h3>
+<p><strong>Tipo:</strong> Linked Database (fuente de "Acciones")</p>
+<p><strong>Configuración:</strong>
+- <strong>Filtros:</strong>
+  - <code>Tipo</code> = "HÁBITO"
+  - <code>Estado</code> = "Activa"
+  - <code>Frecuencia</code> = "@d"
+  - <code>Proyecto.Excluido</code> ≠ true
+- <strong>Orden:</strong>
+  - Por nombre (alfabético)
+- <strong>Visualización:</strong> Tabla o Lista</p>
+<p><strong>Dónde crear:</strong> En la página "Dashboard SYSTEC" → Sección "Operativas"</p>
+<hr />
+<h2 id="estructura-de-pagina-principal-con-multiples-fuentes">📐 Estructura de Página Principal con Múltiples Fuentes</h2>
+<h3 id="dashboard-systec">Dashboard SYSTEC</h3>
+<p><strong>Todas las secciones usan fuentes vinculadas (linked databases) de la misma base de datos "Acciones".</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>📊 SYSTEC Dashboard
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>│
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── 🎯 Por Tipo (5 fuentes vinculadas)
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│   ├── 📝 Ideas → Fuente de &quot;Acciones&quot; con filtro Tipo=IDEA
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>│   ├── 🎯 Metas → Fuente de &quot;Acciones&quot; con filtro Tipo=META
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│   ├── 🔁 Hábitos → Fuente de &quot;Acciones&quot; con filtro Tipo=HÁBITO
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>│   ├── ✅ Tareas → Fuente de &quot;Acciones&quot; con filtro Tipo=TAREA
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>│   └── 📅 Eventos → Fuente de &quot;Acciones&quot; con filtro Tipo=EVENTO
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>│
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>├── ⏱️ Por Horizonte (5 fuentes vinculadas)
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>│   ├── ⏪ +Ayer → Fuente de &quot;Acciones&quot; con filtro Horizonte=+Ayer
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>│   ├── 📌 +Hoy → Fuente de &quot;Acciones&quot; con filtro Horizonte=+Hoy
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>│   ├── 📆 +Semana → Fuente de &quot;Acciones&quot; con filtro Horizonte=+Semana
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>│   ├── 📅 +Mes → Fuente de &quot;Acciones&quot; con filtro Horizonte=+Mes
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>│   └── 🗓️ +Año → Fuente de &quot;Acciones&quot; con filtro Horizonte=+Año
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>│
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>├── 🔧 Operativas (3 fuentes vinculadas)
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>│   ├── Tareas Urgentes → Fuente con filtros combinados
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>│   ├── Eventos de Hoy → Fuente con filtros combinados
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>│   └── Hábitos Diarios → Fuente con filtros combinados
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>│
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>└── 📁 Proyectos
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    └── [Base de datos relacionada &quot;Proyectos&quot;]
+</code></pre></div>
+<p><strong>Total: 13 fuentes vinculadas de la misma base de datos "Acciones"</strong></p>
+<p>Cada fuente muestra los mismos datos pero con diferentes filtros, orden y visualización. Todos los cambios se sincronizan automáticamente.</p>
+<hr />
+<h2 id="flujo-de-trabajo-diario">🔄 Flujo de Trabajo Diario</h2>
+<h3 id="1-captura-idea">1. Captura (IDEA)</h3>
+<ul>
+<li>Crear nueva acción en base de datos "Acciones"</li>
+<li>Dejar <code>Fecha</code>, <code>Hora</code>, <code>Deadline</code> vacíos</li>
+<li>Sistema automáticamente la clasifica como <strong>IDEA</strong></li>
+</ul>
+<h3 id="2-decision">2. Decisión</h3>
+<ul>
+<li>Agregar <code>Fecha</code> → se convierte en <strong>META</strong></li>
+<li>Agregar <code>Hora</code> → se convierte en <strong>EVENTO</strong></li>
+<li>Agregar <code>Deadline</code> → se convierte en <strong>TAREA</strong></li>
+<li>Marcar <code>Recurrente</code> → se convierte en <strong>HÁBITO</strong></li>
+</ul>
+<h3 id="3-ejecucion">3. Ejecución</h3>
+<ul>
+<li>Usar vistas filtradas por tipo o horizonte</li>
+<li>Marcar como completada cuando termine</li>
+</ul>
+<h3 id="4-revision-semanal">4. Revisión Semanal</h3>
+<ul>
+<li>Vista "+Ayer" para liquidar deuda</li>
+<li>Vista "+Semana" para planificar próxima semana</li>
+<li>Revisar y ajustar tipos si es necesario</li>
+</ul>
+<hr />
+<h2 id="templates-de-notion">🎨 Templates de Notion</h2>
+<h3 id="template-nueva-accion">Template: Nueva Acción</h3>
+<p><strong>Propiedades predefinidas:</strong>
+- <code>Estado</code> = "Activa"
+- <code>Tipo Manual</code> = empty (para clasificación automática)
+- <code>Proyecto</code> = [seleccionar si aplica]</p>
+<h3 id="template-evento">Template: Evento</h3>
+<p><strong>Propiedades predefinidas:</strong>
+- <code>Tipo Manual</code> = "EVENTO"
+- <code>Hora</code> = [requerido]
+- <code>Fecha</code> = [requerido]</p>
+<h3 id="template-tarea">Template: Tarea</h3>
+<p><strong>Propiedades predefinidas:</strong>
+- <code>Tipo Manual</code> = "TAREA"
+- <code>Deadline</code> = [requerido]
+- <code>Hora</code> = empty</p>
+<h3 id="template-habito">Template: Hábito</h3>
+<p><strong>Propiedades predefinidas:</strong>
+- <code>Tipo Manual</code> = "HÁBITO"
+- <code>Recurrente</code> = true
+- <code>Frecuencia</code> = [seleccionar]
+- <code>Hora</code> = empty
+- <code>Deadline</code> = empty</p>
+<hr />
+<h2 id="relaciones-y-rollups">🔗 Relaciones y Rollups</h2>
+<h3 id="relacion-acciones-proyectos">Relación: Acciones → Proyectos</h3>
+<p><strong>Rollup en Proyectos:</strong>
+- <strong>Acciones Activas:</strong> Count de acciones con <code>Estado</code> = "Activa"
+- <strong>Próxima Acción:</strong> Min de <code>Fecha</code> de acciones activas</p>
+<h3 id="relacion-proyectos-acciones">Relación: Proyectos → Acciones</h3>
+<p><strong>Rollup en Acciones:</strong>
+- <strong>Proyecto Excluido:</strong> Checkbox del proyecto relacionado
+- Usar en filtros para excluir proyectos del sistema</p>
+<hr />
+<h2 id="ventajas-de-notion-vs-todoist">📊 Ventajas de Notion vs Todoist</h2>
+<h3 id="ventajas">✅ Ventajas</h3>
+<ol>
+<li><strong>Bases de datos relacionadas</strong> - Mejor gestión de proyectos</li>
+<li><strong>Fórmulas avanzadas</strong> - Clasificación automática más flexible</li>
+<li><strong>Múltiples vistas</strong> - Mismo dato, diferentes perspectivas</li>
+<li><strong>Rollups</strong> - Agregaciones automáticas entre bases de datos</li>
+<li><strong>Templates</strong> - Captura rápida y consistente</li>
+<li><strong>Notas ricas</strong> - Más contexto por acción</li>
+<li><strong>Búsqueda avanzada</strong> - Filtros complejos sin sintaxis especial</li>
+</ol>
+<h3 id="consideraciones">⚠️ Consideraciones</h3>
+<ol>
+<li><strong>Recurrencias</strong> - Notion no tiene recurrencia nativa como Todoist</li>
+<li><strong>Solución:</strong> Usar templates o automatización externa</li>
+<li><strong>Sincronización con calendario</strong> - Requiere integración externa</li>
+<li><strong>Solución:</strong> Zapier/Make.com o API de Notion</li>
+<li><strong>Rapidez de captura</strong> - Notion es más lento que Todoist</li>
+<li><strong>Solución:</strong> Usar templates y atajos de teclado</li>
+</ol>
+<hr />
+<h2 id="automatizaciones-recomendadas">🚀 Automatizaciones Recomendadas</h2>
+<h3 id="con-zapiermakecom">Con Zapier/Make.com</h3>
+<ol>
+<li><strong>Captura desde email</strong> → Crear acción como IDEA</li>
+<li><strong>Recordatorios</strong> → Notificaciones para eventos</li>
+<li><strong>Sincronización calendario</strong> → Bidireccional con Google Calendar</li>
+<li><strong>Revisión semanal</strong> → Recordatorio automático</li>
+</ol>
+<h3 id="con-api-de-notion">Con API de Notion</h3>
+<ol>
+<li><strong>Clasificación automática</strong> → Script que actualiza tipos</li>
+<li><strong>Horizontes temporales</strong> → Actualización diaria de fórmulas</li>
+<li><strong>Limpieza de completadas</strong> → Archivar acciones antiguas</li>
+</ol>
+<hr />
+<h2 id="checklist-de-migracion">📝 Checklist de Migración</h2>
+<ul>
+<li>[ ] Crear <strong>una única</strong> base de datos "Acciones" con todas las propiedades</li>
+<li>[ ] Crear base de datos "Proyectos" (relacionada)</li>
+<li>[ ] Configurar fórmulas de clasificación automática (Tipo, Horizonte Temporal)</li>
+<li>[ ] Crear <strong>13 fuentes vinculadas</strong> de "Acciones" en el Dashboard:</li>
+<li>[ ] 5 fuentes por Tipo (IDEA, META, HÁBITO, TAREA, EVENTO)</li>
+<li>[ ] 5 fuentes por Horizonte (+Ayer, +Hoy, +Semana, +Mes, +Año)</li>
+<li>[ ] 3 fuentes operativas (Tareas Urgentes, Eventos Hoy, Hábitos Diarios)</li>
+<li>[ ] Configurar filtros específicos en cada fuente</li>
+<li>[ ] Configurar orden y visualización en cada fuente</li>
+<li>[ ] Configurar templates para cada tipo</li>
+<li>[ ] Migrar acciones existentes desde Todoist</li>
+<li>[ ] Verificar sincronización automática entre fuentes</li>
+<li>[ ] Probar flujo de captura → decisión → ejecución</li>
+<li>[ ] Configurar automatizaciones (opcional)</li>
+<li>[ ] Documentar proceso para el equipo (si aplica)</li>
+</ul>
+<h2 id="ventaja-clave-de-multiples-fuentes">🎯 Ventaja Clave de Múltiples Fuentes</h2>
+<p><strong>Una acción, múltiples vistas, sincronización automática:</strong></p>
+<ul>
+<li>Editas una acción en cualquier fuente → se actualiza en todas</li>
+<li>Cambias el tipo de una acción → aparece automáticamente en la fuente correcta</li>
+<li>Completas una tarea → desaparece de todas las fuentes activas</li>
+<li>Agregas una fecha → se recalcula el horizonte temporal en todas las fuentes</li>
+</ul>
+<p><strong>No necesitas mantener múltiples bases de datos. Todo está en una, mostrado de diferentes formas.</strong></p>
+<hr />
+<h2 id="principios-systec-mantenidos">🎯 Principios SYSTEC Mantenidos</h2>
+<p>✅ <strong>Una acción pertenece a un solo tipo</strong> - Garantizado por fórmula<br />
+✅ <strong>La hora implica rigidez</strong> - EVENTO automático<br />
+✅ <strong>El deadline implica presión externa</strong> - TAREA automática<br />
+✅ <strong>La recurrencia implica rutina</strong> - HÁBITO automático<br />
+✅ <strong>Lo no decidido aún es una idea</strong> - IDEA por defecto<br />
+✅ <strong>Sin etiquetas manuales</strong> - Clasificación automática<br />
+✅ <strong>Filtros atemporales</strong> - Vistas estables<br />
+✅ <strong>Excepción humana siempre gana</strong> - Campo <code>Tipo Manual</code></p>
+<hr />
+<p><strong>El sistema SYSTEC funciona perfectamente en Notion manteniendo todos sus principios fundamentales.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 dalarconrub
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

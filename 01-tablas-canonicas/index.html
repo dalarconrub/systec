@@ -12,6 +12,8 @@
         <meta name="author" content="dalarconrub">
       
       
+        <link rel="canonical" href="https://dalarconrub.github.io/systec/01-tablas-canonicas/">
+      
       
         <link rel="prev" href="../00-filosofia-del-sistema/">
       
@@ -248,7 +250,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../00-filosofia-del-sistema/" class="md-tabs__link">
+        <a href="../docs/" class="md-tabs__link">
           
   
   
@@ -270,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../model/01-modelo-conceptual/" class="md-tabs__link">
+        <a href="../model/model/" class="md-tabs__link">
           
   
   
@@ -377,6 +379,8 @@
       
         
       
+        
+      
     
     
     
@@ -424,6 +428,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -670,6 +702,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -716,6 +756,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -997,6 +1065,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/11-filtros-temporales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filtros temporales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/12-filtros-operativos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filtros operativos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/13-migracion-notion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migración a Notion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1083,24 +1235,24 @@
 </thead>
 <tbody>
 <tr>
-<td>Idea</td>
-<td>Sin fecha ni deadline</td>
-</tr>
-<tr>
-<td>Meta</td>
-<td>No recurrente, sin hora, sin deadline</td>
+<td>Evento</td>
+<td>Con hora</td>
 </tr>
 <tr>
 <td>Hábito</td>
 <td>Recurrente, sin hora, sin deadline</td>
 </tr>
 <tr>
-<td>Tarea</td>
-<td>Sin hora, con deadline</td>
+<td>Meta</td>
+<td>No recurrente, sin hora, con deadline</td>
 </tr>
 <tr>
-<td>Evento</td>
-<td>Con hora</td>
+<td>Tarea</td>
+<td>Sin hora, sin deadline, no recurrente, con fecha</td>
+</tr>
+<tr>
+<td>Idea</td>
+<td>Sin fecha ni deadline</td>
 </tr>
 </tbody>
 </table>
@@ -1109,32 +1261,36 @@
 <thead>
 <tr>
 <th>Tipo</th>
-<th>Filtro</th>
+<th>Filtro base (simplificado)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Idea</td>
-<td>no date &amp; no deadline</td>
-</tr>
-<tr>
-<td>Meta</td>
-<td>!recurring &amp; no time &amp; no deadline</td>
+<td>Evento</td>
+<td>!no time</td>
 </tr>
 <tr>
 <td>Hábito</td>
 <td>recurring &amp; no time &amp; no deadline</td>
 </tr>
 <tr>
-<td>Tarea</td>
-<td>no time &amp; !no deadline</td>
+<td>Meta</td>
+<td>!recurring &amp; no time &amp; !no deadline</td>
 </tr>
 <tr>
-<td>Evento</td>
-<td>!no time</td>
+<td>Tarea</td>
+<td>!recurring &amp; no time &amp; no deadline &amp; !no date</td>
+</tr>
+<tr>
+<td>Idea</td>
+<td>no date &amp; no deadline</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Para versiones avanzadas con etiquetas (<code>@evento</code>, <code>@habito</code>, <code>@meta</code>, <code>@tarea</code>, <code>@idea</code>) y prefiltros de archivo/ búsqueda, consulta <code>model/04-filtros-todoist.md</code>.<br />
+Allí también se documenta el uso intencional de <strong>doble negación <code>!!no time</code></strong> en el filtro de Meta debido a un comportamiento específico del parser de Todoist.</p>
+</blockquote>
 
 
 
