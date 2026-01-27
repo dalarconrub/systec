@@ -3,11 +3,12 @@
 1. ¿Tiene hora?
    - Sí → EVENTO
    - No → seguir
-2. ¿Tiene deadline?
-   - Sí → TAREA
-   - No → seguir
-3. ¿Es recurrente?
+2. ¿Es recurrente?
    - Sí → HÁBITO
-   - No → META
-4. ¿No tiene fecha ni deadline?
-   - IDEA
+   - No → seguir
+3. ¿Tiene deadline?
+   - Sí → META
+   - No → seguir
+4. ¿Tiene fecha?
+   - Sí → TAREA
+   - No → IDEA

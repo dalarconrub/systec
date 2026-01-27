@@ -1,26 +1,97 @@
 # Filtros en Todoist
 
-## Idea
-no date & no deadline
+## Prefiltro común
 
-## Meta
-!recurring & no time & no deadline
+Para excluir contenidos archivados o no operativos:
 
-## Hábito
-recurring & no time & no deadline
+```text
+(!#Z-* & !search:*)
+```
 
-## Tarea
-no time & !no deadline
+Todas las variantes de filtros de tipo asumen este prefiltro.
+
+---
 
 ## Evento
-!no time
 
+### Versión sin etiquetas
 
-## Filtro de contenidos guardados o categorias no revisables
-(!#Z-* & !search:*) 
+```text
+(!#Z-* & !search:*) & !no time
+```
 
-Por ejemplo en Tarea:
-(!#Z-* & !search:*) & (no time & !no deadline)
+### Versión con etiquetas
+
+```text
+(!#Z-* & !search:*) & ((!no time & (!@idea & !@tarea & !@meta & !@habito))  | (!@idea & !@tarea & !@meta & !@habito & @evento))
+```
+
+---
+
+## Hábito
+
+### Versión sin etiquetas
+
+```text
+(!#Z-* & !search:*) & (no time & recurring)
+```
+
+### Versión con etiquetas
+
+```text
+(!#Z-* & !search:*) & (((no time & recurring) & (!@idea & !@tarea & !@meta  & !@evento)) | (!@idea & !@tarea & !@meta & @habito & !@evento))
+```
+
+---
+
+## Meta
+
+> Nota: se usa **doble negación `!!no time`** por un comportamiento específico del parser de filtros de Todoist.  
+> Lógicamente es equivalente a `no time`, pero **debe escribirse así** para que siempre funcione como se espera.
+
+### Versión sin etiquetas
+
+```text
+(!#Z-* & !search:*) & (!!no time & !recurring & !no deadline)
+```
+
+### Versión con etiquetas
+
+```text
+(!#Z-* & !search:*) & (((!!no time & !recurring & !no deadline) & (!@idea & !@tarea & !@habito  & !@evento)) | (!@idea & !@tarea & @meta & !@habito & !@evento))
+```
+
+---
+
+## Tarea
+
+### Versión sin etiquetas
+
+```text
+(!#Z-* & !search:*) & (no time & !recurring & no deadline & !no date)
+```
+
+### Versión con etiquetas
+
+```text
+(!#Z-* & !search:*) & (((no time & !recurring & no deadline & !no date) & (!@idea & !@meta & !@habito  & !@evento)) | (!@idea & @tarea & !@meta & !@habito & !@evento))
+```
+
+---
+
+## Idea
+
+### Versión sin etiquetas
+
+```text
+(!#Z-* & !search:*) & (no date & no deadline & !subtask)
+```
+
+### Versión con etiquetas
+
+```text
+(!#Z-* & !search:*) & (((no date & no deadline & !subtask) & (!@tarea & !@meta & !@habito  & !@evento)) | (@idea  & !@tarea & !@meta & !@habito & !@evento))
+```
 
 
 
