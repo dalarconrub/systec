@@ -82,13 +82,15 @@ Siempre que **no esté marcada como otro tipo**.
 
 ## 4. Filtro META
 
+> **Nota importante:** Se usa **doble negación `!!no time`** por un comportamiento específico del parser de filtros de Todoist. Lógicamente es equivalente a `no time`, pero **debe escribirse así** para que siempre funcione como se espera.
+
 ### Filtro completo
 
 ```text
 (!#Z-* & !search:*) &
 (
   (!@idea & !@tarea & @meta & !@habito & !@evento)
-  | (( !recurring & no time & no deadline) & (!@idea & !@tarea & !@habito & !@evento))
+  | (( !recurring & !!no time & !no deadline) & (!@idea & !@tarea & !@habito & !@evento))
 )
 ```
 
@@ -97,7 +99,7 @@ Siempre que **no esté marcada como otro tipo**.
 Una acción es **META** si:
 
 * está explícitamente marcada como `@meta`, **o**
-* no es recurrente, no tiene hora ni deadline (la fecha es el compromiso)
+* no es recurrente, no tiene hora pero sí tiene deadline (la fecha es el compromiso)
 
 ---
 
@@ -290,11 +292,13 @@ Nunca puede haber más de una etiqueta de tipo.
 
 ### META
 
+> **Nota:** Se usa **doble negación `!!no time`** por un comportamiento específico del parser de filtros de Todoist. Lógicamente es equivalente a `no time`, pero **debe escribirse así** para que siempre funcione como se espera.
+
 ```text
 (!#Z-* & !search:*) &
 (
   (!@idea & !@tarea & @meta & !@habito & !@evento)
-  | (!recurring & no time & no deadline & !@idea & !@tarea & !@habito & !@evento)
+  | (!recurring & !!no time & !no deadline & !@idea & !@tarea & !@habito & !@evento)
 )
 ```
 

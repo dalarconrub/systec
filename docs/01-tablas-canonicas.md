@@ -16,9 +16,10 @@
 |------|----------------------------------------------|
 | Evento | !no time                                   |
 | Hábito | recurring & no time & no deadline          |
-| Meta   | !recurring & no time & !no deadline        |
+| Meta   | !recurring & !!no time & !no deadline<sup>1</sup>        |
 | Tarea  | !recurring & no time & no deadline & !no date |
 | Idea   | no date & no deadline                      |
 
-> Para versiones avanzadas con etiquetas (`@evento`, `@habito`, `@meta`, `@tarea`, `@idea`) y prefiltros de archivo/ búsqueda, consulta `model/04-filtros-todoist.md`.  
-> Allí también se documenta el uso intencional de **doble negación `!!no time`** en el filtro de Meta debido a un comportamiento específico del parser de Todoist.
+<sup>1</sup> **Nota sobre Meta:** Se usa **doble negación `!!no time`** por un comportamiento específico del parser de filtros de Todoist. Lógicamente es equivalente a `no time`, pero **debe escribirse así** para que siempre funcione como se espera.
+
+> Para versiones avanzadas con etiquetas (`@evento`, `@habito`, `@meta`, `@tarea`, `@idea`) y prefiltros de archivo/ búsqueda, consulta `model/04-filtros-todoist.md`.
