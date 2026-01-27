@@ -116,11 +116,11 @@ Son **vistas de tiempo**, no de ontología.
 
 SYSTEC utiliza cinco horizontes temporales, **mutuamente excluyentes**:
 
-- **+Ayer** → deuda temporal  
-- **+Hoy** → compromiso activo  
-- **+Semana** → corto plazo  
-- **+Mes** → medio plazo  
-- **+Año** → largo plazo  
+- **+->Hoy** → deuda temporal y compromiso inmediato  
+- **-+>1 Día** → compromiso de mañana  
+- **+->1 Semana** → corto plazo  
+- **+->1 Mes** → medio plazo  
+- **+->1 Año** → largo plazo  
 
 ---
 
@@ -132,7 +132,7 @@ Jerarquía temporal:
 
 ```
 
-+Ayer → +Hoy → +Semana → +Mes → +Año
++->Hoy → -+>1 Día → +->1 Semana → +->1 Mes → +->1 Año
 
 ````
 
@@ -140,57 +140,51 @@ Cada filtro **excluye implícitamente** a los anteriores.
 
 ---
 
-## 4. Filtro +Ayer
+## 4. Filtro +->Hoy
 
 ### Definición
-Acciones que **debían haberse realizado antes de hoy** y no se completaron.
+Acciones que **debían haberse realizado antes de hoy** o que deben ejecutarse **hoy o antes de mañana**.
 
 ### Filtro Todoist
+
 ```text
-overdue
-````
+(!#Z-* & !search:*) & (overdue | due before: +1 day)
+```
 
 ### Lectura SYSTEC
 
-> Deuda temporal. No se planifica, se liquida.
+> Deuda temporal y compromiso inmediato. No se planifica, se liquida.
 
 ---
 
-## 5. Filtro +Hoy
+## 5. Filtro -+>1 Día
 
 ### Definición
 
-Acciones cuya ejecución corresponde **al día actual**.
+Acciones previstas para **mañana** (desde ayer hasta pasado mañana).
 
 ### Filtro Todoist
 
 ```text
-today
+(!#Z-* & !search:*) & due after: yesterday & due before: +2day
 ```
 
-### Incluye
+### Lectura SYSTEC
 
-* Tareas con fecha hoy
-* Eventos con hora hoy
-* Metas fijadas para hoy
-
-### Excluye
-
-* Acciones vencidas (+Ayer)
-* Acciones futuras
+> Compromiso de corto plazo, aún flexible pero próximo.
 
 ---
 
-## 6. Filtro +Semana
+## 6. Filtro +->1 Semana
 
 ### Definición
 
-Acciones previstas para los **próximos días**, excluyendo hoy.
+Acciones previstas para los **próximos 7 días**, excluyendo hoy y mañana.
 
 ### Filtro Todoist
 
 ```text
-due after: today & due before: +7 days
+(!#Z-* & !search:*) & due after: today & due before: +7day
 ```
 
 ### Lectura SYSTEC
@@ -199,16 +193,16 @@ due after: today & due before: +7 days
 
 ---
 
-## 7. Filtro +Mes
+## 7. Filtro +->1 Mes
 
 ### Definición
 
-Acciones previstas para el **resto del mes**, excluyendo hoy y esta semana.
+Acciones previstas para el **resto del mes**, excluyendo esta semana.
 
 ### Filtro Todoist
 
 ```text
-due after: +7 days & due before: +30 days
+(!#Z-* & !search:*) & (due after: +7 days & due before: +30 days)
 ```
 
 ### Lectura SYSTEC
@@ -217,7 +211,7 @@ due after: +7 days & due before: +30 days
 
 ---
 
-## 8. Filtro +Año
+## 8. Filtro +->1 Año
 
 ### Definición
 
@@ -226,7 +220,7 @@ Acciones de **horizonte largo**, sin urgencia operativa.
 ### Filtro Todoist
 
 ```text
-due after: +30 days & due before: +365 days
+(!#Z-* & !search:*) & (due after: +30 days & due before: +365 days)
 ```
 
 ### Lectura SYSTEC
@@ -237,13 +231,13 @@ due after: +30 days & due before: +365 days
 
 ## 9. Tabla resumen
 
-| Horizonte | Filtro Todoist                                | Significado       |
-| --------- | --------------------------------------------- | ----------------- |
-| +Ayer     | `overdue`                                     | Deuda             |
-| +Hoy      | `today`                                       | Compromiso activo |
-| +Semana   | `due after: today & due before: +7 days`      | Corto plazo       |
-| +Mes      | `due after: +7 days & due before: +30 days`   | Medio plazo       |
-| +Año      | `due after: +30 days & due before: +365 days` | Largo plazo       |
+| Horizonte     | Filtro Todoist                                                                    | Significado                    |
+| ------------- | ---------------------------------------------------------------------------------- | ------------------------------ |
+| +->Hoy        | `(!#Z-* & !search:*) & (overdue \| due before: +1 day)`                            | Deuda y compromiso inmediato   |
+| -+>1 Día      | `(!#Z-* & !search:*) & due after: yesterday & due before: +2day`                    | Compromiso de mañana           |
+| +->1 Semana   | `(!#Z-* & !search:*) & due after: today & due before: +7day`                       | Corto plazo                    |
+| +->1 Mes      | `(!#Z-* & !search:*) & (due after: +7 days & due before: +30 days)`                | Medio plazo                    |
+| +->1 Año      | `(!#Z-* & !search:*) & (due after: +30 days & due before: +365 days)`              | Largo plazo                    |
 
 ---
 
@@ -252,13 +246,13 @@ due after: +30 days & due before: +365 days
 El uso correcto es siempre:
 
 1. **Clasificar por tipo** (SYSTEC)
-2. **Visualizar por horizonte** (+Ayer / +Hoy / +Semana / +Mes / +Año)
+2. **Visualizar por horizonte** (+->Hoy / -+>1 Día / +->1 Semana / +->1 Mes / +->1 Año)
 
 Ejemplos:
 
-* *Tareas +Hoy*
-* *Eventos +Semana*
-* *Hábitos +Mes*
+* *Tareas +->Hoy*
+* *Eventos +->1 Semana*
+* *Hábitos +->1 Mes*
 
 ---
 
