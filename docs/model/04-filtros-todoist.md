@@ -195,4 +195,115 @@ Ejemplos:
 
 Nunca se mezclan.
 
+---
+
+# SYSTEC — Bandejas de entrada (vistas operativas)
+
+Los filtros de bandejas de entrada son **vistas simples** que muestran todo lo que vence en un periodo determinado, sin clasificar por tipo. Son útiles para revisión rápida y gestión operativa diaria.
+
+---
+
+## 1. Para Ayer
+
+Muestra todas las acciones vencidas (deuda temporal).
+
+### Filtro Todoist
+
+```text
+(!#Z-* & !search:*) & overdue
+```
+
+### Uso
+
+Revisión de deuda acumulada. No se planifica, se liquida.
+
+---
+
+## 2. Para Hoy
+
+Muestra todas las acciones que vencen hoy.
+
+### Filtro Todoist
+
+```text
+(!#Z-* & !search:*) & today
+```
+
+### Uso
+
+Vista operativa del día actual. Incluye eventos, tareas, metas y hábitos programados para hoy.
+
+---
+
+## 3. Esta Semana
+
+Muestra todas las acciones que vencen antes del próximo lunes (o inicio de la próxima semana).
+
+### Filtro Todoist
+
+```text
+(!#Z-* & !search:*) & due before: next week
+```
+
+### Uso
+
+Vista semanal completa. Útil para planificación y revisión semanal.
+
+---
+
+## 4. Este Mes
+
+Muestra todas las acciones que vencen antes del final del mes actual.
+
+### Filtro Todoist
+
+```text
+(!#Z-* & !search:*) & due before: end of month
+```
+
+### Uso
+
+Vista mensual completa. Útil para planificación y revisión mensual.
+
+---
+
+## 5. Este Año
+
+Muestra todas las acciones que vencen después del final del mes actual y antes del próximo año.
+
+### Filtro Todoist
+
+```text
+(!#Z-* & !search:*) & due after: end of month & due before: next year
+```
+
+### Uso
+
+Vista de horizonte largo. Útil para planificación estratégica y revisión anual.
+
+---
+
+## 6. Tabla resumen de bandejas
+
+| Bandeja      | Filtro Todoist                                                              | Uso                    |
+| ------------ | --------------------------------------------------------------------------- | ---------------------- |
+| Para Ayer    | `(!#Z-* & !search:*) & overdue`                                            | Deuda temporal         |
+| Para Hoy     | `(!#Z-* & !search:*) & today`                                              | Vista del día          |
+| Esta Semana  | `(!#Z-* & !search:*) & due before: next week`                              | Vista semanal          |
+| Este Mes     | `(!#Z-* & !search:*) & due before: end of month`                           | Vista mensual          |
+| Este Año     | `(!#Z-* & !search:*) & due after: end of month & due before: next year`   | Vista anual            |
+
+---
+
+## 7. Diferencia con horizontes temporales
+
+Los **horizontes temporales** (+->Hoy, -+>1 Día, etc.) son **mutuamente excluyentes** y se usan para clasificación.
+
+Las **bandejas de entrada** son **vistas acumulativas** que muestran todo lo que vence en un periodo, sin exclusión mutua.
+
+**Ejemplo:**
+- Una acción puede estar en **+->Hoy** (horizonte) Y en **Esta Semana** (bandeja) simultáneamente
+- Los horizontes ayudan a decidir prioridad
+- Las bandejas ayudan a revisar contexto completo
+
 
