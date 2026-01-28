@@ -22,28 +22,33 @@ document.addEventListener('DOMContentLoaded', function() {
     // Aumentar tamaño del logo
     const logo = document.querySelector('.md-header__button.md-logo');
     if (logo) {
-        logo.style.position = 'absolute';
-        logo.style.left = '50%';
-        logo.style.transform = 'translateX(-50%)';
-        logo.style.padding = '0.5rem 1rem';
+        logo.style.position = 'relative';
+        logo.style.padding = '0.5rem 1.5rem';
         logo.style.margin = '0 auto';
         logo.style.zIndex = '10';
+        logo.style.display = 'flex';
+        logo.style.alignItems = 'center';
+        logo.style.justifyContent = 'center';
     }
     
     const logoImg = document.querySelector('.md-header__button.md-logo img, .md-header__button.md-logo svg');
     if (logoImg) {
-        logoImg.style.height = '6rem';
+        logoImg.style.height = '8rem';
         logoImg.style.width = 'auto';
         logoImg.style.maxWidth = 'none';
         logoImg.style.display = 'block';
         logoImg.style.margin = '0';
+        logoImg.style.objectFit = 'contain';
     }
     
-    // Ajustar header
+    // Ajustar header para dar más espacio al logo
     const header = document.querySelector('.md-header');
     if (header) {
-        header.style.minHeight = '7rem';
-        header.style.padding = '0.5rem 0';
+        header.style.minHeight = '9rem';
+        header.style.padding = '1rem 0';
+        header.style.display = 'flex';
+        header.style.alignItems = 'center';
+        header.style.justifyContent = 'center';
     }
     
     const headerInner = document.querySelector('.md-header__inner');
