@@ -20,6 +20,8 @@ theme:
   custom_dir: docs/assets
   extra_css:
     - stylesheets/extra.css
+  extra_javascript:
+    - javascripts/logo.js
   features:
     - navigation.tabs
     - navigation.sections
