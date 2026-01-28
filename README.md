@@ -1,28 +1,23 @@
-# Todoist Temporal System — Filosofía y Uso
+# MAR - Meta-Acción-Resultado
 
-Este repositorio documenta **la filosofía completa**, los **casos de uso**, las **tablas canónicas**
-y el **árbol de decisión (canvas)** de un sistema de productividad en Todoist basado en
-relaciones temporales reales de la herramienta.
+## Goal-Action-Outcome (GAO)
 
-- Sin etiquetas
-- Filtros atemporales
-- Todo vive en Todoist
-- El calendario es solo una vista
+Este repositorio documenta el **sistema completo MAR (Meta-Acción-Resultado)**, un sistema de productividad que integra:
+
+- **Sistema temporal SYSTEC** - Clasificación de acciones en Todoist por relaciones temporales reales
+- **Timeboxing bidimensional** - Macro y micro timeboxing con bloques de 30 minutos
+- **Sistema MAR completo** - Arquitectura de 6 capas desde identidad hasta retroalimentación
+- **Identidad visual** - Logo, colores y tipografía normativos
+- **Dashboard operativo** - Control visual del sistema
+- **Plantillas fundacionales** - Estructura base para implementación
+
+## Principios clave
+
+- Metas dirigen, acciones ejecutan, resultados evidencian
+- El tiempo se compromete en bloques, no en intenciones
+- La sobreplanificación está prohibida
+- Todo avance debe ser medible
 
 **📖 Documentación en línea:** [https://systec.netlify.app/](https://systec.netlify.app/)
 
 Consulta la carpeta `docs/` para el tutorial completo.
-
-
-
-# Todoist Temporal System
-
-Sistema de productividad en Todoist basado en **tiempo real**, no en categorías artificiales.
-
-## Principios clave
-- Todo vive en Todoist (eventos incluidos)
-- Google Calendar es solo una vista
-- No se usan etiquetas
-- Filtros atemporales y estables
-
-Consulta la carpeta `model/` para el tutorial completo.
