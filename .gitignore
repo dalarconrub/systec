@@ -21,3 +21,8 @@ desktop.ini
 # MkDocs
 site/
 .cache/
+
+# Exportables MAR (mantener estructura pero no los archivos grandes)
+# Los .gitkeep se mantienen, pero los SVG/PNG grandes pueden ignorarse si es necesario
+# MAR_EXPORTS/**/*.svg
+# MAR_EXPORTS/**/*.png
