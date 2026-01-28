@@ -1,7 +1,7 @@
-site_name: SYSTEC - Sistema Temporal de Productividad
-site_description: Sistema de productividad en Todoist basado en relaciones temporales reales
+site_name: SYSTEC
+site_description: Sistema Temporal de Productividad con MAR (Meta-Acción-Resultado)
 site_author: dalarconrub
-site_url: https://dalarconrub.github.io/systec/
+site_url: https://systec.netlify.app/
 repo_url: https://github.com/dalarconrub/systec
 repo_name: dalarconrub/systec
 
@@ -15,6 +15,8 @@ use_directory_urls: true
 
 theme:
   name: material
+  logo: assets/images/systec-logo.png
+  favicon: assets/images/systec-logo.png
   palette:
     - scheme: default
       primary: indigo
