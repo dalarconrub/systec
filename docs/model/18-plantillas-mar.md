@@ -94,7 +94,73 @@ Estados válidos:
 
 ---
 
-## 5. Revisión
+## 5. Definición de Metas importantes
+
+En el sistema MAR, se consideran **metas** todas aquellas intenciones relevantes que responden a alguno de los siguientes criterios modales:
+
+### 5.1 Tipología de metas por modalidad
+
+Toda meta pertenece **obligatoriamente** a una de estas tres categorías:
+
+| Modalidad       | Etiqueta | Definición                                                                                                                                    |
+| --------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Debes**       | must     | Obligaciones ineludibles. No realizarlas tiene consecuencias negativas claras (académicas, profesionales, legales o personales).              |
+| **Deberías**    | should   | Compromisos importantes para el progreso, la calidad o la coherencia del sistema, aunque su incumplimiento no tenga consecuencias inmediatas. |
+| **Te gustaría** | would    | Aspiraciones deseables, mejoras o proyectos de valor añadido, sin obligación directa.                                                         |
+
+> **Todo lo que no entra en alguna de estas tres categorías no es una meta MAR.**
+
+### 5.2 Definición de urgencia
+
+La **urgencia** de una meta no se define por la presión subjetiva, sino por su **modalidad**, siguiendo un **orden jerárquico fijo**:
+
+#### Orden de urgencia (inalterable)
+
+1. 🟥 **Debes (must)** → máxima urgencia
+2. 🟧 **Deberías (should)** → urgencia media
+3. 🟨 **Te gustaría (would)** → baja urgencia
+
+Este orden se aplica **siempre**, independientemente del contenido concreto de la meta.
+
+> Una meta *would* **nunca** puede desplazar a una meta *must*.  
+> Una meta *should* **nunca** puede desplazar a una meta *must*.
+
+### 5.3 Regla de activación de metas
+
+* Las **metas activas** del sistema deben priorizarse siguiendo el orden: **must → should → would**
+* El sistema puede contener metas de los tres tipos, pero:
+  * Las metas *must* tienen **prioridad absoluta**
+  * Las metas *would* solo se activan cuando las *must* y *should* están controladas
+
+### 5.4 Implicaciones operativas
+
+#### En la planificación semanal
+
+* No se planifican acciones *would* si existen acciones *must* pendientes
+* Las metas *would* son candidatas a:
+  * exploración
+  * baja carga
+  * bloques residuales
+
+#### En la revisión
+
+* Fallar una meta *must* es un **fallo del sistema**
+* Posponer una meta *would* **no es un fallo**
+
+### 5.5 Principio clave MAR
+
+> **La importancia define qué es una meta.  
+> La modalidad define su urgencia.  
+> La urgencia define el orden de ejecución.**
+
+Con esta definición, el sistema MAR:
+* elimina la ambigüedad de "prioridades"
+* evita la sobrecarga
+* protege lo importante de lo meramente deseable
+
+---
+
+## 6. Revisión
 
 - Diaria → resultados
 - Semanal → metas y carga
@@ -112,13 +178,14 @@ Estados válidos:
 ```md
 ---
 tipo: meta
+modalidad: must | should | would
+urgencia: alta | media | baja
 estado: activa
 fecha_inicio:
 fecha_limite:
-prioridad: alta | media | baja
 ---
 
-# META: {{Título de la meta}}
+# 🟠 META ({{modalidad}}): {{Título de la meta}}
 
 ## Descripción
 ¿Para qué existe esta meta?

@@ -66,12 +66,18 @@ Ver **hacia dónde va el sistema**, no qué se hace hoy.
 ```md
 ## 🟠 Metas activas
 
-| Meta | Límite | Estado |
-|-----|--------|--------|
-| 🟠 Artículo imagen corporal | 30/04 | 🟢 |
-| 🟠 Sistema MAR v1 | 15/03 | 🟡 |
-| 🟠 Curso metodología | 10/05 | 🔴 |
+| Modalidad | Meta | Límite | Estado |
+|-----------|------|--------|--------|
+| 🟥 must | Artículo imagen corporal | 30/04 | 🟢 |
+| 🟧 should | Sistema MAR v1 | 15/03 | 🟡 |
+| 🟨 would | Curso metodología | 10/05 | 🔴 |
 ```
+
+**Reglas de visualización:**
+
+* Las metas *must* se muestran **siempre primero**
+* Las *should* solo después
+* Las *would* nunca ocupan la parte superior del dashboard
 
 Estados:
 
