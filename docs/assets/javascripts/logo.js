@@ -19,12 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         topic.style.overflow = 'hidden';
     }
     
-    // Aumentar tamaño del logo
+    // Aumentar tamaño del logo y centrarlo
     const logo = document.querySelector('.md-header__button.md-logo');
     if (logo) {
-        logo.style.position = 'relative';
+        logo.style.position = 'absolute';
+        logo.style.left = '50%';
+        logo.style.transform = 'translateX(-50%)';
         logo.style.padding = '0.5rem 1.5rem';
-        logo.style.margin = '0 auto';
+        logo.style.margin = '0';
         logo.style.zIndex = '10';
         logo.style.display = 'flex';
         logo.style.alignItems = 'center';
@@ -57,5 +59,17 @@ document.addEventListener('DOMContentLoaded', function() {
         headerInner.style.position = 'relative';
         headerInner.style.padding = '0';
         headerInner.style.alignItems = 'center';
+        headerInner.style.width = '100%';
     }
+    
+    // Ocultar otros botones de la cabecera para que no interfieran con el centrado
+    const otherButtons = document.querySelectorAll('.md-header__button:not(.md-logo)');
+    otherButtons.forEach(button => {
+        button.style.position = 'absolute';
+        if (button.classList.contains('md-header__button--prev')) {
+            button.style.left = '0.5rem';
+        } else if (button.classList.contains('md-header__button--next')) {
+            button.style.right = '0.5rem';
+        }
+    });
 });
