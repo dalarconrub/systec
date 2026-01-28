@@ -1,33 +1,51 @@
-/* Logo más grande en la cabecera */
+/* Logo más grande en la cabecera - centrado y prominente */
 .md-header__button.md-logo {
-    padding: 0.2rem 0.4rem;
-    margin: 0;
+    padding: 0.5rem 1rem !important;
+    margin: 0 auto !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 10;
 }
 
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-    height: 4.5rem !important;
-    width: auto;
-    max-width: none;
+    height: 6rem !important;
+    width: auto !important;
+    max-width: none !important;
+    display: block !important;
 }
 
-/* Ocultar texto del título en la cabecera */
+/* Ocultar completamente el texto del título en la cabecera */
 .md-header__title {
     display: none !important;
+    visibility: hidden !important;
 }
 
 .md-header__topic {
     display: none !important;
+    visibility: hidden !important;
 }
 
-/* Ajustar espaciado cuando no hay texto */
 .md-header__inner {
-    justify-content: flex-start;
-    padding-left: 0.4rem;
+    justify-content: center !important;
+    position: relative !important;
+    padding: 0 !important;
 }
 
 /* Asegurar que el logo tenga espacio suficiente */
 .md-header {
-    height: auto;
-    min-height: 4.5rem;
+    height: auto !important;
+    min-height: 7rem !important;
+    padding: 0.5rem 0 !important;
+}
+
+/* Ocultar cualquier texto que pueda aparecer */
+.md-header__ellipsis {
+    display: none !important;
+}
+
+/* Asegurar que el logo esté visible y centrado */
+.md-header__button {
+    margin: 0 !important;
 }
