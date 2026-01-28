@@ -5,7 +5,8 @@
     position: absolute !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    z-index: 10;
+    z-index: 10 !important;
+    width: auto !important;
 }
 
 .md-header__button.md-logo img,
@@ -14,23 +15,36 @@
     width: auto !important;
     max-width: none !important;
     display: block !important;
+    margin: 0 !important;
+    object-fit: contain !important;
 }
 
 /* Ocultar completamente el texto del título en la cabecera */
-.md-header__title {
+.md-header__title,
+.md-header__title * {
     display: none !important;
     visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
 }
 
-.md-header__topic {
+.md-header__topic,
+.md-header__topic * {
     display: none !important;
     visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
 }
 
 .md-header__inner {
     justify-content: center !important;
     position: relative !important;
     padding: 0 !important;
+    align-items: center !important;
 }
 
 /* Asegurar que el logo tenga espacio suficiente */
@@ -41,11 +55,20 @@
 }
 
 /* Ocultar cualquier texto que pueda aparecer */
-.md-header__ellipsis {
+.md-header__ellipsis,
+.md-header__ellipsis * {
     display: none !important;
+    visibility: hidden !important;
 }
 
 /* Asegurar que el logo esté visible y centrado */
-.md-header__button {
+.md-header__button:not(.md-logo) {
     margin: 0 !important;
+}
+
+/* Forzar que no haya texto junto al logo */
+.md-header__title:after,
+.md-header__topic:after {
+    content: "" !important;
+    display: none !important;
 }
