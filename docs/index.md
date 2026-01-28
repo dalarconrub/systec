@@ -1,10 +1,16 @@
-# SYSTEC - Sistema Temporal de Productividad
+# MAR - Meta-Acción-Resultado
 
-Bienvenido a **SYSTEC**, un sistema de productividad en Todoist basado en **relaciones temporales reales**, no en categorías artificiales.
+## Goal-Action-Outcome (GAO)
 
-## ¿Qué es SYSTEC?
+Bienvenido a **MAR**, un sistema de productividad basado en **Meta-Acción-Resultado** que integra:
 
-SYSTEC es un sistema que parte de una premisa simple:
+* **Sistema temporal SYSTEC** - Clasificación de acciones en Todoist por relaciones temporales reales
+* **Timeboxing bidimensional** - Macro y micro timeboxing con bloques de 30 minutos
+* **Sistema MAR completo** - Arquitectura de 6 capas desde identidad hasta retroalimentación
+
+## ¿Qué es MAR?
+
+MAR es un sistema que parte de una premisa simple:
 
 > **No organizamos tareas por lo que son, sino por cómo existen en el tiempo.**
 
@@ -16,20 +22,21 @@ Todoist no modela intención ni significado; modela:
 
 El sistema acepta estas limitaciones y las convierte en una ventaja: usamos cada propiedad **solo como rasgo discriminante**, no como descripción total.
 
-## Principios fundamentales
+## Principios fundamentales de MAR
 
-1. **Una acción pertenece a un solo tipo**
-2. **La hora implica rigidez**
-3. **El deadline implica presión externa**
-4. **La recurrencia implica rutina**
-5. **Lo no decidido aún es una idea, no una tarea**
+1. **Metas dirigen, acciones ejecutan, resultados evidencian**
+2. **El tiempo se compromete en bloques, no en intenciones**
+3. **La sobreplanificación está prohibida**
+4. **Todo avance debe ser medible**
+5. **Una acción pertenece a un solo tipo** (SYSTEC)
 
 ## Características clave
 
-- ✅ **Sin etiquetas** - El sistema no depende de etiquetas manuales
-- ✅ **Filtros atemporales** - Los filtros son estables y no dependen del día actual
-- ✅ **Todo vive en Todoist** - Incluyendo eventos y recordatorios
-- ✅ **El calendario es solo una vista** - Google Calendar es una visualización, no la fuente de verdad
+- ✅ **Sistema temporal SYSTEC** - Clasificación por relaciones temporales reales en Todoist
+- ✅ **Timeboxing bidimensional** - Macro (metas) y micro (bloques de 30 min)
+- ✅ **Identidad visual completa** - Logo, colores y tipografía normativos
+- ✅ **Dashboard operativo** - Control visual del sistema en tiempo real
+- ✅ **Plantillas fundacionales** - Estructura base para implementación
 
 ## Estructura de la documentación
 
@@ -39,14 +46,18 @@ Explora los conceptos fundamentales, filosofía y casos de uso del sistema.
 ### 🔧 Modelo y reglas
 Profundiza en el modelo conceptual, reglas de modelado, filtros y etiquetas operativas.
 
+### 🧠 Sistema MAR completo
+Arquitectura de 6 capas, timeboxing, dashboard, plantillas y exportables.
+
 ## Comenzar
 
-Si eres nuevo en SYSTEC, te recomendamos comenzar con:
+Si eres nuevo en MAR, te recomendamos comenzar con:
 
 1. [Filosofía del sistema](00-filosofia-del-sistema.md) - Entiende los principios fundamentales
-2. [Modelo conceptual](model/01-modelo-conceptual.md) - Aprende cómo funciona el sistema
-3. [Uso diario](model/06-uso-diario.md) - Guía práctica para implementar el sistema
+2. [Sistema total MAR](model/16-sistema-total-mar.md) - Arquitectura completa del sistema
+3. [Timeboxing bidimensional](model/14-timeboxing-bidimensional.md) - Modelo operativo
+4. [Plantillas MAR](model/18-plantillas-mar.md) - Estructura base para implementación
 
 ---
 
-**El sistema es estable porque no depende del día actual ni de etiquetas manuales.**
+**MAR es un sistema operativo personal completo: modelo conceptual, sistema visual, método operativo, marco medible e identidad completa.**
