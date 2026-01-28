@@ -1,20 +1,33 @@
 /* Logo más grande en la cabecera */
 .md-header__button.md-logo {
-    padding: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    margin: 0;
 }
 
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-    height: 3rem !important;
+    height: 4.5rem !important;
     width: auto;
+    max-width: none;
 }
 
 /* Ocultar texto del título en la cabecera */
 .md-header__title {
-    display: none;
+    display: none !important;
+}
+
+.md-header__topic {
+    display: none !important;
 }
 
 /* Ajustar espaciado cuando no hay texto */
 .md-header__inner {
     justify-content: flex-start;
+    padding-left: 0.4rem;
+}
+
+/* Asegurar que el logo tenga espacio suficiente */
+.md-header {
+    height: auto;
+    min-height: 4.5rem;
 }
