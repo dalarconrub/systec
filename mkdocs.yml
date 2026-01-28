@@ -17,6 +17,16 @@ theme:
   name: material
   logo: assets/images/systec-logo.png
   favicon: assets/images/systec-logo.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+  custom_dir: docs/assets
   palette:
     - scheme: default
       primary: indigo
