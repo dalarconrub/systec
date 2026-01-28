@@ -15,12 +15,28 @@
         // Aumentar tamaño del logo y centrarlo
         const logo = document.querySelector('.md-header__button.md-logo');
         if (logo) {
-            logo.style.cssText = 'position: absolute !important; left: 50% !important; transform: translateX(-50%) !important; padding: 0.5rem 1.5rem !important; margin: 0 !important; z-index: 10 !important; display: flex !important; align-items: center !important; justify-content: center !important;';
+            logo.style.cssText = 'position: absolute !important; left: 50% !important; transform: translateX(-50%) !important; padding: 0.5rem 1.5rem !important; margin: 0 !important; z-index: 10 !important; display: flex !important; align-items: center !important; justify-content: center !important; cursor: default !important; pointer-events: none !important;';
+            
+            // Prevenir el comportamiento de click
+            logo.href = '#';
+            logo.onclick = function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            };
+            
+            // También prevenir eventos de forma más agresiva
+            logo.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+                return false;
+            }, true);
         }
         
         const logoImg = document.querySelector('.md-header__button.md-logo img, .md-header__button.md-logo svg');
         if (logoImg) {
-            logoImg.style.cssText = 'height: 10rem !important; width: auto !important; max-width: none !important; display: block !important; margin: 0 !important; object-fit: contain !important;';
+            logoImg.style.cssText = 'height: 10rem !important; width: auto !important; max-width: none !important; display: block !important; margin: 0 !important; object-fit: contain !important; pointer-events: none !important;';
         }
         
         // Ajustar header para dar más espacio al logo

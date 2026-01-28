@@ -10,6 +10,8 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    cursor: default !important;
+    pointer-events: none !important;
 }
 
 .md-header__button.md-logo img,
@@ -20,6 +22,7 @@
     display: block !important;
     margin: 0 !important;
     object-fit: contain !important;
+    pointer-events: none !important;
 }
 
 /* Ocultar completamente el texto del título en la cabecera */
