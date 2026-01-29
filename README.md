@@ -4,7 +4,7 @@
 
 Este repositorio documenta el **sistema completo MAR (Meta-Acción-Resultado)**, un sistema de productividad que integra:
 
-- **Sistema temporal MAR** ![Logo MAR](docs/assets/images/MAR_logo_full.png) - Clasificación de acciones en Todoist por relaciones temporales reales
+- **Sistema temporal MAR** - Clasificación de acciones en Todoist por relaciones temporales reales
 - **Timeboxing bidimensional** - Macro y micro timeboxing con bloques de 30 minutos
 - **Sistema MAR completo** - Arquitectura de 6 capas desde identidad hasta retroalimentación
 - **Identidad visual** - Logo, colores y tipografía normativos
@@ -18,6 +18,6 @@ Este repositorio documenta el **sistema completo MAR (Meta-Acción-Resultado)**,
 - La sobreplanificación está prohibida
 - Todo avance debe ser medible
 
-**📖 Documentación en línea:** [https://MAR.netlify.app/](https://MAR.netlify.app/)
+**📖 Documentación en línea:** [https://systec.netlify.app/](https://systec.netlify.app/)
 
 Consulta la carpeta `docs/` para el tutorial completo.

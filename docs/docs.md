@@ -1,5 +1,7 @@
 # Documentación
 
+![Logo MAR](assets/images/MAR_logo_full.png)
+
 Esta sección contiene la documentación general del sistema MAR.
 
 ## Contenido
