@@ -11,7 +11,7 @@ Netlify es muy fácil de usar y funciona excelente con MkDocs.
 2. **Conecta tu repositorio:**
    - Ve a tu dashboard de Netlify
    - Click en "Add new site" > "Import an existing project"
-   - Conecta con GitHub y selecciona el repositorio `MAR ![Logo MAR](assets/images/MAR_logo_full.png)`
+   - Conecta con GitHub y selecciona el repositorio `MAR`
 
 3. **Configuración automática:**
    - Netlify detectará automáticamente el archivo `netlify.toml`
@@ -20,7 +20,7 @@ Netlify es muy fácil de usar y funciona excelente con MkDocs.
 
 4. **Deploy:**
    - Netlify desplegará automáticamente en cada push a `main`
-   - Tu sitio estará disponible en: `https://MAR ![Logo MAR](assets/images/MAR_logo_full.png).netlify.app/`
+   - Tu sitio estará disponible en: `https://MAR.netlify.app/`
    - Puedes configurar un dominio personalizado si quieres
 
 ### Ventajas:
@@ -43,7 +43,7 @@ Vercel también es una excelente opción.
 2. **Conecta tu repositorio:**
    - Ve a tu dashboard de Vercel
    - Click en "Add New Project"
-   - Importa el repositorio `MAR ![Logo MAR](assets/images/MAR_logo_full.png)` desde GitHub
+   - Importa el repositorio `MAR` desde GitHub
 
 3. **Configuración:**
    - Framework Preset: Other
@@ -73,7 +73,7 @@ Otra opción gratuita y confiable.
 
 2. **Conecta tu repositorio:**
    - Ve a Pages > Create a project
-   - Conecta con GitHub y selecciona `MAR ![Logo MAR](assets/images/MAR_logo_full.png)`
+   - Conecta con GitHub y selecciona `MAR`
 
 3. **Configuración:**
    - Build command: `pip install -r requirements.txt && mkdocs build`
@@ -96,7 +96,7 @@ Otra alternativa gratuita.
 
 2. **Crea un Static Site:**
    - New > Static Site
-   - Conecta con GitHub y selecciona `MAR ![Logo MAR](assets/images/MAR_logo_full.png)`
+   - Conecta con GitHub y selecciona `MAR`
 
 3. **Configuración:**
    - Build Command: `pip install -r requirements.txt && mkdocs build`
@@ -117,7 +117,7 @@ Solo necesitas:
 2. Conectar el repositorio
 3. ¡Listo! Se desplegará automáticamente
 
-**Sitio activo:** [https://MAR ![Logo MAR](assets/images/MAR_logo_full.png).netlify.app/](https://MAR ![Logo MAR](assets/images/MAR_logo_full.png).netlify.app/)
+**Sitio activo:** [https://MAR.netlify.app/](https://MAR.netlify.app/)
 
 ---
 

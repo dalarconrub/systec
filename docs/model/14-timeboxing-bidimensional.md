@@ -2,7 +2,7 @@
 
 ## Meta – Acción – Resultado (MAR) / Goal – Action – Outcome (GAO)  
 
-Este documento define el sistema **Meta–Acción–Resultado (MAR)** ![Logo MAR](../assets/images/MAR_logo_full.png) —*Goal–Action–Outcome (GAO)*— y su integración con un modelo de **timeboxing bidimensional (macro y micro)**, aplicado a los elementos de MAR ![Logo MAR](../assets/images/MAR_logo_full.png): **eventos, hábitos, tareas y metas**.
+Este documento define el sistema **Meta–Acción–Resultado (MAR)** ![Logo MAR](../assets/images/MAR_logo_full.png) —*Goal–Action–Outcome (GAO)*— y su integración con un modelo de **timeboxing bidimensional (macro y micro)**, aplicado a los elementos de MAR: **eventos, hábitos, tareas y metas**.
 
 Las **acciones** constituyen la **única unidad ejecutable** del sistema.
 
@@ -19,7 +19,7 @@ Las **acciones** constituyen la **única unidad ejecutable** del sistema.
 > Nada se ejecuta sin convertirse en acción.  
 > Nada se evalúa sin producir resultados.
 
-En MAR ![Logo MAR](../assets/images/MAR_logo_full.png):
+En MAR:
 
 - Las **metas** corresponden a **intenciones de plazo medio/largo** (con deadline).  
 - Las **tareas** son trabajo flexible con fecha.  
@@ -172,7 +172,7 @@ El macro-timeboxing define **cuándo se planifica, revisa y gobierna** cada elem
 
 ### 3.2 Clasificación por tipo de elemento
 
-| Tipo (MAR ![Logo MAR](../assets/images/MAR_logo_full.png)) | Escala macro dominante |
+| Tipo (MAR) | Escala macro dominante |
 |---------------|------------------------|
 | Eventos | Diaria / Semanal |
 | Hábitos | Diaria / Semanal / Anual |
@@ -193,7 +193,7 @@ La jornada se divide en **bloques indivisibles de 30 minutos**, que constituyen 
 - Un bloque se asigna a **una acción**.  
 - Todo bloque debe cerrarse con un **estado explícito**.
 
-> En MAR ![Logo MAR](../assets/images/MAR_logo_full.png), los **eventos** ocupan bloques directamente;  
+> En MAR, los **eventos** ocupan bloques directamente;  
 > las **metas y tareas** generan acciones que ocupan bloques.
 
 ---
@@ -298,7 +298,7 @@ La asignación de bloques sigue un **orden estricto**:
 
 Si no quedan bloques libres, **no se planifica nada más**.
 
-Este algoritmo convive con los **horizontes temporales** de MAR ![Logo MAR](../assets/images/MAR_logo_full.png):
+Este algoritmo convive con los **horizontes temporales** de MAR:
 
 - Los horizontes (+->Hoy, -+>1 Día, etc.) dicen **cuándo vive** cada compromiso.  
 - El timeboxing MAR/GAO dice **en qué bloques concretos** se ejecuta.
@@ -333,7 +333,7 @@ Ejemplos:
 
 ## 10. Métricas derivables
 
-Al combinar MAR ![Logo MAR](../assets/images/MAR_logo_full.png) + MAR/GAO se pueden obtener métricas como:
+Al combinar MAR + MAR/GAO se pueden obtener métricas como:
 
 - Acciones planificadas vs ejecutadas.  
 - Bloques por acción.  
@@ -350,7 +350,7 @@ Al combinar MAR ![Logo MAR](../assets/images/MAR_logo_full.png) + MAR/GAO se pue
 - El tiempo se compromete en **bloques**, no en intenciones vagas.  
 - La sobreplanificación está prohibida: no se asignan más bloques de los disponibles.  
 - Todo avance debe ser **medible y revisable**.  
-- Los horizontes temporales de MAR ![Logo MAR](../assets/images/MAR_logo_full.png) y el timeboxing MAR/GAO se usan juntos, nunca en conflicto.
+- Los horizontes temporales de MAR y el timeboxing MAR/GAO se usan juntos, nunca en conflicto.
 
 ---
 
@@ -360,13 +360,13 @@ El sistema MAR/GAO es agnóstico de herramienta y puede implementarse sobre:
 
 - **Obsidian** (Markdown + propiedades).  
 - **Notion** (bases relacionales).  
-- **Todoist** (acciones como tareas atómicas dentro del marco MAR ![Logo MAR](../assets/images/MAR_logo_full.png)).
+- **Todoist** (acciones como tareas atómicas dentro del marco MAR).
 
-En el contexto de MAR ![Logo MAR](../assets/images/MAR_logo_full.png):
+En el contexto de MAR:
 
 - Los **tipos temporales** (Evento, Hábito, Meta, Tarea, Idea) definen **qué es** cada elemento.  
 - Los **horizontes y bandejas** definen **cuándo vive**.  
 - MAR/GAO y el **timeboxing bidimensional** definen **cómo se ejecuta y cómo se mide**.
 
-El sistema **Meta–Acción–Resultado / Goal–Action–Outcome** se convierte así en el **marco único de ejecución y evaluación** sobre la ontología temporal de MAR ![Logo MAR](../assets/images/MAR_logo_full.png).
+El sistema **Meta–Acción–Resultado / Goal–Action–Outcome** se convierte así en el **marco único de ejecución y evaluación** sobre la ontología temporal de MAR.
 

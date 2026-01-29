@@ -1,5 +1,5 @@
 
-# MAR ![Logo MAR](assets/images/MAR_logo_full.png) — Canvas de Recurrencias y Filtros Temporales
+# MAR — Canvas de Recurrencias y Filtros Temporales
 
 ---
 
@@ -116,7 +116,7 @@ recurring & search:@d
 
 ---
 
-## 🧱 Reglas de coherencia MAR ![Logo MAR](assets/images/MAR_logo_full.png)
+## 🧱 Reglas de coherencia MAR
 
 1. El **tipo** lo decide el árbol, no los marcadores  
 2. El **deadline** solo se usa para presión externa real  
@@ -127,7 +127,7 @@ recurring & search:@d
 
 ## 🏁 Regla final del canvas
 
-> **MAR ![Logo MAR](assets/images/MAR_logo_full.png) separa tres planos:**
+> **MAR separa tres planos:**
 >
 > - Ontología temporal → filtros  
 > - Presión externa → deadline  

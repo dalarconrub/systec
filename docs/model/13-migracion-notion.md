@@ -1,8 +1,8 @@
-# Migración de MAR ![Logo MAR](../assets/images/MAR_logo_full.png) a Notion
+# Migración de MAR a Notion
 
 ## 🎯 Objetivo
 
-Migrar el sistema de productividad MAR ![Logo MAR](../assets/images/MAR_logo_full.png) (basado en propiedades temporales de Todoist) a Notion usando **una única base de datos** con **múltiples fuentes (linked databases)** para mantener la lógica temporal y la clasificación automática.
+Migrar el sistema de productividad MAR (basado en propiedades temporales de Todoist) a Notion usando **una única base de datos** con **múltiples fuentes (linked databases)** para mantener la lógica temporal y la clasificación automática.
 
 ---
 
@@ -108,7 +108,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
 | Propiedad | Tipo | Descripción |
 |-----------|------|-------------|
 | **Nombre** | Title | Nombre del proyecto |
-| **Excluido** | Checkbox | Si está fuera del sistema MAR ![Logo MAR](../assets/images/MAR_logo_full.png) |
+| **Excluido** | Checkbox | Si está fuera del sistema MAR |
 | **Acciones** | Relation | Relación con "Acciones" |
 
 ---
@@ -143,7 +143,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por fecha de creación (más recientes primero)
 - **Visualización:** Tabla o Lista
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Tipo"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Tipo"
 
 ---
 
@@ -163,7 +163,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Fecha` (ascendente)
 - **Visualización:** Tabla o Calendario
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Tipo"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Tipo"
 
 ---
 
@@ -183,7 +183,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Frecuencia` (diario, semanal, mensual, anual)
 - **Visualización:** Tabla o Lista
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Tipo"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Tipo"
 
 ---
 
@@ -202,7 +202,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Deadline` (ascendente)
 - **Visualización:** Tabla o Kanban (por Deadline)
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Tipo"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Tipo"
 
 ---
 
@@ -220,7 +220,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Fecha` y `Hora` (ascendente)
 - **Visualización:** Calendario o Timeline
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Tipo"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Tipo"
 
 ---
 
@@ -239,7 +239,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Fecha` (ascendente - más antiguas primero)
 - **Visualización:** Tabla
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Horizonte"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Horizonte"
 
 ---
 
@@ -256,7 +256,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Hora` (ascendente), luego por `Tipo`
 - **Visualización:** Tabla o Lista
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Horizonte"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Horizonte"
 
 ---
 
@@ -273,7 +273,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Fecha` (ascendente)
 - **Visualización:** Tabla o Calendario
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Horizonte"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Horizonte"
 
 ---
 
@@ -290,7 +290,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Fecha` (ascendente)
 - **Visualización:** Tabla o Calendario
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Horizonte"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Horizonte"
 
 ---
 
@@ -307,7 +307,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Fecha` (ascendente)
 - **Visualización:** Tabla o Timeline
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Por Horizonte"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Por Horizonte"
 
 ---
 
@@ -327,7 +327,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Deadline` (ascendente)
 - **Visualización:** Tabla
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Operativas"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Operativas"
 
 ---
 
@@ -345,7 +345,7 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por `Hora` (ascendente)
 - **Visualización:** Lista o Timeline
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Operativas"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Operativas"
 
 ---
 
@@ -363,18 +363,18 @@ Para gestionar proyectos y exclusiones (equivalente a `!#Z-*` en Todoist).
   - Por nombre (alfabético)
 - **Visualización:** Tabla o Lista
 
-**Dónde crear:** En la página "Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)" → Sección "Operativas"
+**Dónde crear:** En la página "Dashboard MAR" → Sección "Operativas"
 
 ---
 
 ## 📐 Estructura de Página Principal con Múltiples Fuentes
 
-### Dashboard MAR ![Logo MAR](../assets/images/MAR_logo_full.png)
+### Dashboard MAR
 
 **Todas las secciones usan fuentes vinculadas (linked databases) de la misma base de datos "Acciones".**
 
 ```
-📊 MAR ![Logo MAR](../assets/images/MAR_logo_full.png) Dashboard
+📊 MAR Dashboard
 │
 ├── 🎯 Por Tipo (5 fuentes vinculadas)
 │   ├── 📝 Ideas → Fuente de "Acciones" con filtro Tipo=IDEA
@@ -554,7 +554,7 @@ Cada fuente muestra los mismos datos pero con diferentes filtros, orden y visual
 
 ---
 
-## 🎯 Principios MAR ![Logo MAR](../assets/images/MAR_logo_full.png) Mantenidos
+## 🎯 Principios MAR Mantenidos
 
 ✅ **Una acción pertenece a un solo tipo** - Garantizado por fórmula  
 ✅ **La hora implica rigidez** - EVENTO automático  
@@ -567,4 +567,4 @@ Cada fuente muestra los mismos datos pero con diferentes filtros, orden y visual
 
 ---
 
-**El sistema MAR ![Logo MAR](../assets/images/MAR_logo_full.png) funciona perfectamente en Notion manteniendo todos sus principios fundamentales.**
+**El sistema MAR funciona perfectamente en Notion manteniendo todos sus principios fundamentales.**

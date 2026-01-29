@@ -18,6 +18,6 @@ Este repositorio documenta el **sistema completo MAR (Meta-Acción-Resultado)**,
 - La sobreplanificación está prohibida
 - Todo avance debe ser medible
 
-**📖 Documentación en línea:** [https://MAR ![Logo MAR](assets/images/MAR_logo_full.png).netlify.app/](https://MAR ![Logo MAR](assets/images/MAR_logo_full.png).netlify.app/)
+**📖 Documentación en línea:** [https://MAR.netlify.app/](https://MAR.netlify.app/)
 
 Consulta la carpeta `docs/` para el tutorial completo.

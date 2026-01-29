@@ -1,11 +1,11 @@
 
-# MAR ![Logo MAR](assets/images/MAR_logo_full.png) — Canvas de Etiquetas Operativas (Personas, Lugares, Tiempo y Recursos)
+# MAR — Canvas de Etiquetas Operativas (Personas, Lugares, Tiempo y Recursos)
 
 ---
 
 ## 🧭 Principio rector
 
-> **En MAR ![Logo MAR](assets/images/MAR_logo_full.png), las etiquetas NO definen el tipo de acción.**  
+> **En MAR, las etiquetas NO definen el tipo de acción.**  
 > Definen **con quién**, **dónde**, **con qué** y **cuánto** se ejecuta.
 
 La **ontología** (Idea · Meta · Tarea · Hábito · Evento)  
@@ -15,7 +15,7 @@ Las etiquetas son **capas operativas transversales**.
 
 ---
 
-## 🧩 Capas del sistema MAR ![Logo MAR](assets/images/MAR_logo_full.png)
+## 🧩 Capas del sistema MAR
 
 ```
 
@@ -145,7 +145,7 @@ search:@t
 @recurso
 ```
 
-### Recursos estándar MAR ![Logo MAR](assets/images/MAR_logo_full.png)
+### Recursos estándar MAR
 
 | Etiqueta     | Recurso              |
 | ------------ | -------------------- |
@@ -191,7 +191,7 @@ Cada capa responde a una pregunta distinta:
 
 | Pregunta            | Respuesta       |
 | ------------------- | --------------- |
-| ¿Qué es?            | Filtros MAR ![Logo MAR](assets/images/MAR_logo_full.png)  |
+| ¿Qué es?            | Filtros MAR  |
 | ¿Cada cuánto?       | @d @s @m @a @d2 |
 | ¿Con quién?         | @persona        |
 | ¿Dónde?             | @lugar          |
@@ -209,7 +209,7 @@ Cada capa responde a una pregunta distinta:
 
 ---
 
-## 🧱 Regla de coherencia MAR ![Logo MAR](assets/images/MAR_logo_full.png)
+## 🧱 Regla de coherencia MAR
 
 > **Si al quitar todas las etiquetas
 > el tipo deja de estar claro,
@@ -222,7 +222,7 @@ los filtros **sostienen**.
 
 ## 🏁 Regla final del canvas
 
-> **En MAR ![Logo MAR](assets/images/MAR_logo_full.png):**
+> **En MAR:**
 >
 > * Los filtros definen la estructura
 > * Los marcadores definen el ritmo

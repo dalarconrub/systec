@@ -1,6 +1,8 @@
 # Modelo
 
-Esta sección contiene el modelo detallado y las reglas del sistema MAR ![Logo MAR](../assets/images/MAR_logo_full.png).
+![Logo MAR](../assets/images/MAR_logo_full.png)
+
+Esta sección contiene el modelo detallado y las reglas del sistema MAR.
 
 ## Contenido
 
