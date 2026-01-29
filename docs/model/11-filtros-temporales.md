@@ -1,11 +1,11 @@
 
-# SYSTEC — Filtros temporales sin solapamientos (versión refinada)
+# MAR ![Logo MAR](assets/images/MAR_logo_full.png) — Filtros temporales sin solapamientos (versión refinada)
 
 ---
 
 ## 1. Objetivo de esta revisión
 
-Estos filtros temporales han sido **ajustados deliberadamente** para cumplir un requisito clave en SYSTEC:
+Estos filtros temporales han sido **ajustados deliberadamente** para cumplir un requisito clave en MAR ![Logo MAR](assets/images/MAR_logo_full.png):
 
 > **Un elemento no puede aparecer en más de un horizonte temporal.**
 
@@ -34,7 +34,7 @@ Cada filtro:
 
 ## 3. Antes de Ayer
 
-### Nombre SYSTEC
+### Nombre MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 **Antes de Ayer**
 
 ### Filtro Todoist
@@ -46,7 +46,7 @@ overdue & !yesterday
 
 Incluye todas las acciones vencidas **anteriores a ayer**.
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 > Deuda histórica acumulada.
 
@@ -60,7 +60,7 @@ Incluye todas las acciones vencidas **anteriores a ayer**.
 
 ## 4. Ayer y Hoy
 
-### Nombre SYSTEC
+### Nombre MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 **Ayer y Hoy**
 
@@ -79,7 +79,7 @@ Incluye las acciones asignadas **a ayer o al día actual**.
 * Acciones completadas tarde
 * Compromisos activos inmediatos
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 > Zona caliente de ejecución y ajuste.
 
@@ -87,7 +87,7 @@ Incluye las acciones asignadas **a ayer o al día actual**.
 
 ## 5. Esta Semana
 
-### Nombre SYSTEC
+### Nombre MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 **Esta Semana**
 
@@ -102,7 +102,7 @@ due after last week & due before: next week
 Incluye las acciones planificadas para la **semana natural en curso**
 (excluyendo ayer y hoy).
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 > Horizonte semanal limpio, sin pasado inmediato.
 
@@ -110,7 +110,7 @@ Incluye las acciones planificadas para la **semana natural en curso**
 
 ## 6. Este Mes
 
-### Nombre SYSTEC
+### Nombre MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 **Este Mes**
 
@@ -125,7 +125,7 @@ due after: next week & due before: end of month
 Incluye las acciones previstas para **el resto del mes actual**,
 excluyendo la semana en curso.
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 > Planificación mensual sin presión semanal.
 
@@ -133,7 +133,7 @@ excluyendo la semana en curso.
 
 ## 7. Este Año
 
-### Nombre SYSTEC
+### Nombre MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 **Este Año**
 
@@ -148,7 +148,7 @@ due after: end of month & due before: next year
 Incluye las acciones previstas para **el resto del año natural**,
 excluyendo el mes actual.
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 > Horizonte estratégico anual.
 
@@ -156,7 +156,7 @@ excluyendo el mes actual.
 
 ## 8. Tabla resumen (sin solapamientos)
 
-| Horizonte SYSTEC | Filtro Todoist                                    |        |
+| Horizonte MAR ![Logo MAR](assets/images/MAR_logo_full.png) | Filtro Todoist                                    |        |
 | ---------------- | ------------------------------------------------- | ------ |
 | Antes de Ayer    | `overdue & !yesterday`                            |        |
 | Ayer y Hoy       | `yesterday                                        | today` |
@@ -166,7 +166,7 @@ excluyendo el mes actual.
 
 ---
 
-## 9. Regla de uso en SYSTEC
+## 9. Regla de uso en MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 El flujo correcto es siempre:
 
@@ -183,7 +183,7 @@ Ejemplos:
 
 ## 10. Regla final
 
-> **En SYSTEC, los horizontes temporales no se pisan.
+> **En MAR ![Logo MAR](assets/images/MAR_logo_full.png), los horizontes temporales no se pisan.
 > Cada acción vive en un único tramo del tiempo.**
 
 Si aparece en dos, el filtro está mal definido.

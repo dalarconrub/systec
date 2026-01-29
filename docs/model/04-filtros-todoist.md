@@ -27,18 +27,18 @@ Por ejemplo en Tarea:
 
 
 
-# SYSTEC — Filtros temporales de horizonte
+# MAR ![Logo MAR](../assets/images/MAR_logo_full.png) - Filtros temporales de horizonte
 
 ---
 
 ## 1. Objetivo de los filtros temporales
 
-SYSTEC define **filtros temporales de horizonte** para responder a una única pregunta operativa:
+MAR ![Logo MAR](../assets/images/MAR_logo_full.png) define **filtros temporales de horizonte** para responder a una única pregunta operativa:
 
 > **¿Cuándo debe atenderse esta acción?**
 
 Estos filtros **no clasifican el tipo** de acción  
-(eso lo hacen los filtros SYSTEC: Idea, Meta, Tarea, Hábito, Evento).
+(eso lo hacen los filtros MAR ![Logo MAR](../assets/images/MAR_logo_full.png): Idea, Meta, Tarea, Hábito, Evento).
 
 Son **vistas de tiempo**, no de ontología.
 
@@ -46,7 +46,7 @@ Son **vistas de tiempo**, no de ontología.
 
 ## 2. Horizontes temporales definidos
 
-SYSTEC utiliza cinco horizontes temporales, **mutuamente excluyentes**:
+MAR ![Logo MAR](../assets/images/MAR_logo_full.png) utiliza cinco horizontes temporales, **mutuamente excluyentes**:
 
 - **+->Hoy** → deuda temporal y compromiso inmediato  
 - **-+>1 Día** → compromiso de mañana  
@@ -83,7 +83,7 @@ Acciones que **debían haberse realizado antes de hoy** o que deben ejecutarse *
 (!#Z-* & !search:*) & (overdue | due before: +1 day)
 ```
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](../assets/images/MAR_logo_full.png)
 
 > Deuda temporal y compromiso inmediato. No se planifica, se liquida.
 
@@ -101,7 +101,7 @@ Acciones previstas para **mañana** (desde ayer hasta pasado mañana).
 (!#Z-* & !search:*) & due after: yesterday & due before: +2day
 ```
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](../assets/images/MAR_logo_full.png)
 
 > Compromiso de corto plazo, aún flexible pero próximo.
 
@@ -119,7 +119,7 @@ Acciones previstas para los **próximos 7 días**, excluyendo hoy y mañana.
 (!#Z-* & !search:*) & due after: today & due before: +7day
 ```
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](../assets/images/MAR_logo_full.png)
 
 > Compromisos cercanos, aún flexibles.
 
@@ -137,7 +137,7 @@ Acciones previstas para el **resto del mes**, excluyendo esta semana.
 (!#Z-* & !search:*) & (due after: +7 days & due before: +30 days)
 ```
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](../assets/images/MAR_logo_full.png)
 
 > Trabajo planificable sin presión inmediata.
 
@@ -155,7 +155,7 @@ Acciones de **horizonte largo**, sin urgencia operativa.
 (!#Z-* & !search:*) & (due after: +30 days & due before: +365 days)
 ```
 
-### Lectura SYSTEC
+### Lectura MAR ![Logo MAR](../assets/images/MAR_logo_full.png)
 
 > Intención estratégica, no acción inmediata.
 
@@ -173,11 +173,11 @@ Acciones de **horizonte largo**, sin urgencia operativa.
 
 ---
 
-## 10. Relación con SYSTEC
+## 10. Relación con MAR ![Logo MAR](../assets/images/MAR_logo_full.png)
 
 El uso correcto es siempre:
 
-1. **Clasificar por tipo** (SYSTEC)
+1. **Clasificar por tipo** (MAR ![Logo MAR](../assets/images/MAR_logo_full.png))
 2. **Visualizar por horizonte** (+->Hoy / -+>1 Día / +->1 Semana / +->1 Mes / +->1 Año)
 
 Ejemplos:
@@ -190,14 +190,14 @@ Ejemplos:
 
 ## 11. Regla final
 
-> **En SYSTEC, los filtros de tipo dicen qué es una acción.
+> **En MAR ![Logo MAR](../assets/images/MAR_logo_full.png), los filtros de tipo dicen qué es una acción.
 > Los filtros temporales dicen cuándo vive.**
 
 Nunca se mezclan.
 
 ---
 
-# SYSTEC — Bandejas de entrada (vistas operativas)
+# MAR ![Logo MAR](../assets/images/MAR_logo_full.png) - Bandejas de entrada (vistas operativas)
 
 Los filtros de bandejas de entrada son **vistas simples** que muestran todo lo que vence en un periodo determinado, sin clasificar por tipo. Son útiles para revisión rápida y gestión operativa diaria.
 

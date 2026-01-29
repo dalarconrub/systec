@@ -1,6 +1,6 @@
 # Documentación
 
-Esta sección contiene la documentación general del sistema SYSTEC.
+Esta sección contiene la documentación general del sistema MAR ![Logo MAR](assets/images/MAR_logo_full.png).
 
 ## Contenido
 

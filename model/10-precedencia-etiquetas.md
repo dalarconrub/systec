@@ -1,16 +1,16 @@
-# SYSTEC — Precedencia explícita de etiquetas de tipo
+# MAR ![Logo MAR](assets/images/MAR_logo_full.png) — Precedencia explícita de etiquetas de tipo
 
 ---
 
 ## 1. Problema que se resuelve
 
-SYSTEC clasifica las acciones de forma **automática** usando filtros temporales  
+MAR ![Logo MAR](assets/images/MAR_logo_full.png) clasifica las acciones de forma **automática** usando filtros temporales  
 (fecha, hora, recurrencia y deadline).
 
 Sin embargo, existen situaciones en las que el usuario **necesita forzar** el tipo
 de una acción, independientemente de sus propiedades temporales.
 
-Para ello, SYSTEC introduce una **regla formal de precedencia**:
+Para ello, MAR ![Logo MAR](assets/images/MAR_logo_full.png) introduce una **regla formal de precedencia**:
 las **etiquetas de tipo** anulan cualquier inferencia automática.
 
 ---
@@ -24,7 +24,7 @@ La inferencia automática **solo se aplica cuando no hay decisión explícita**.
 
 ---
 
-## 3. Etiquetas de tipo en SYSTEC
+## 3. Etiquetas de tipo en MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 Las etiquetas de tipo son:
 
@@ -93,7 +93,7 @@ Esta formulación asegura que:
 
 ---
 
-## 7. Regla general SYSTEC (formalizada)
+## 7. Regla general MAR ![Logo MAR](assets/images/MAR_logo_full.png) (formalizada)
 
 Para cualquier tipo `X`:
 
@@ -116,7 +116,7 @@ No las uses como norma general.
 
 ---
 
-## 9. Regla de coherencia SYSTEC
+## 9. Regla de coherencia MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 > **Si al eliminar todas las etiquetas
 > el tipo deja de estar claro,
@@ -129,7 +129,7 @@ los filtros sostienen el sistema.
 
 ## 10. Cierre
 
-La precedencia explícita permite a SYSTEC combinar:
+La precedencia explícita permite a MAR ![Logo MAR](assets/images/MAR_logo_full.png) combinar:
 
 * **automatización robusta**
 * **control humano consciente**

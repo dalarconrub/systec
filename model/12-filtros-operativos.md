@@ -1,14 +1,14 @@
 ````markdown
-# SYSTEC — Filtros canónicos de tipo (versión operativa completa)
+# MAR ![Logo MAR](assets/images/MAR_logo_full.png) — Filtros canónicos de tipo (versión operativa completa)
 
-Este documento explica **los filtros finales de clasificación por tipo en SYSTEC**, tal y como han quedado **implementados y probados en Todoist**.  
+Este documento explica **los filtros finales de clasificación por tipo en MAR ![Logo MAR](assets/images/MAR_logo_full.png)**, tal y como han quedado **implementados y probados en Todoist**.  
 Incluye la lógica de **precedencia por etiqueta**, las **exclusiones necesarias** y los **filtros de higiene del sistema**.
 
 ---
 
 ## 1. Principios generales del diseño
 
-Todos los filtros de tipo en SYSTEC comparten **tres principios estructurales**:
+Todos los filtros de tipo en MAR ![Logo MAR](assets/images/MAR_logo_full.png) comparten **tres principios estructurales**:
 
 ### 1.1 Exclusión de contenedores no operativos
 ```text
@@ -52,7 +52,7 @@ Una acción es **IDEA** si:
 * está explícitamente marcada como `@idea`, **o**
 * no tiene fecha ni deadline y además está marcada como `@idea`
 
-> En SYSTEC, **una idea siempre requiere decisión explícita**
+> En MAR ![Logo MAR](assets/images/MAR_logo_full.png), **una idea siempre requiere decisión explícita**
 > para evitar que el backlog crezca de forma pasiva.
 
 ---
@@ -176,7 +176,7 @@ El orden real de evaluación es:
 
 ---
 
-## 9. Regla final SYSTEC
+## 9. Regla final MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 > **Si una acción está mal clasificada,
 > no se arregla con fechas:
@@ -185,9 +185,9 @@ El orden real de evaluación es:
 Estos filtros convierten esa decisión en estructura.
 
 ```markdown
-# SYSTEC — Documento maestro (TODO)
+# MAR ![Logo MAR](assets/images/MAR_logo_full.png) — Documento maestro (TODO)
 
-Este documento integra **todo el sistema SYSTEC** en una única referencia operativa:
+Este documento integra **todo el sistema MAR ![Logo MAR](assets/images/MAR_logo_full.png)** en una única referencia operativa:
 - Filosofía
 - Ontología (tipos)
 - Precedencia por etiquetas
@@ -199,13 +199,13 @@ Este documento integra **todo el sistema SYSTEC** en una única referencia opera
 
 ---
 
-## 1. Filosofía SYSTEC
+## 1. Filosofía MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
-> **SYSTEC clasifica acciones por su relación con el tiempo,  
+> **MAR ![Logo MAR](assets/images/MAR_logo_full.png) clasifica acciones por su relación con el tiempo,  
 > no por su significado.**
 
 Todoist modela tiempo (hora, fecha, recurrencia, deadline).  
-SYSTEC acepta ese modelo y lo convierte en estructura estable.
+MAR ![Logo MAR](assets/images/MAR_logo_full.png) acepta ese modelo y lo convierte en estructura estable.
 
 Principios:
 1. Una acción pertenece a un solo tipo
@@ -448,10 +448,10 @@ No definen tipo. Solo ritmo humano.
 
 ---
 
-## 12. Regla final SYSTEC
+## 12. Regla final MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 > **La estructura decide por defecto.
 > La decisión humana corrige cuando hace falta.**
 
-Ese equilibrio es SYSTEC.
+Ese equilibrio es MAR ![Logo MAR](assets/images/MAR_logo_full.png).
 

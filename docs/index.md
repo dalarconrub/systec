@@ -4,7 +4,7 @@
 
 Bienvenido a **MAR**, un sistema de productividad basado en **Meta-Acción-Resultado** que integra:
 
-* **Sistema temporal SYSTEC** - Clasificación de acciones en Todoist por relaciones temporales reales
+* **Sistema temporal MAR** ![Logo MAR](assets/images/MAR_logo_full.png) - Clasificación de acciones en Todoist por relaciones temporales reales
 * **Timeboxing bidimensional** - Macro y micro timeboxing con bloques de 30 minutos
 * **Sistema MAR completo** - Arquitectura de 6 capas desde identidad hasta retroalimentación
 
@@ -28,11 +28,11 @@ El sistema acepta estas limitaciones y las convierte en una ventaja: usamos cada
 2. **El tiempo se compromete en bloques, no en intenciones**
 3. **La sobreplanificación está prohibida**
 4. **Todo avance debe ser medible**
-5. **Una acción pertenece a un solo tipo** (SYSTEC)
+5. **Una acción pertenece a un solo tipo** (MAR ![Logo MAR](assets/images/MAR_logo_full.png))
 
 ## Características clave
 
-- ✅ **Sistema temporal SYSTEC** - Clasificación por relaciones temporales reales en Todoist
+- ✅ **Sistema temporal MAR** ![Logo MAR](assets/images/MAR_logo_full.png) - Clasificación por relaciones temporales reales en Todoist
 - ✅ **Timeboxing bidimensional** - Macro (metas) y micro (bloques de 30 min)
 - ✅ **Identidad visual completa** - Logo, colores y tipografía normativos
 - ✅ **Dashboard operativo** - Control visual del sistema en tiempo real

@@ -1,6 +1,6 @@
 # Modelo
 
-Esta sección contiene el modelo detallado y las reglas del sistema SYSTEC.
+Esta sección contiene el modelo detallado y las reglas del sistema MAR ![Logo MAR](assets/images/MAR_logo_full.png).
 
 ## Contenido
 
@@ -12,5 +12,5 @@ Esta sección contiene el modelo detallado y las reglas del sistema SYSTEC.
 - [Uso diario](06-uso-diario.md) - Guía de uso diario
 - [Etiquetas de recurrencia](07-etiquetas-recurrencia.md) - Sistema de etiquetas para recurrencias
 - [Etiquetas operativas](08-etiquetas-operativas.md) - Etiquetas para operaciones
-- [Canvas recurrencias](09-systec-canvas-recurrencias.md) - Canvas para manejar recurrencias
+- [Canvas recurrencias](09-MAR ![Logo MAR](assets/images/MAR_logo_full.png)-canvas-recurrencias.md) - Canvas para manejar recurrencias
 - [Precedencia etiquetas](10-precedencia-etiquetas.md) - Orden de precedencia de etiquetas

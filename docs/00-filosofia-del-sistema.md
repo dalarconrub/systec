@@ -27,7 +27,7 @@ El sistema es estable porque **no depende del día actual** ni de etiquetas manu
 
 ## Filtros temporales
 
-SYSTEC utiliza dos tipos de filtros temporales que complementan la clasificación por tipo:
+MAR ![Logo MAR](assets/images/MAR_logo_full.png) utiliza dos tipos de filtros temporales que complementan la clasificación por tipo:
 
 ### Horizontes temporales (mutuamente excluyentes)
 
@@ -66,6 +66,6 @@ Los filtros temporales refuerzan los principios fundamentales:
 2. **No dependen de etiquetas manuales**: Se basan únicamente en propiedades temporales de Todoist
 3. **Complementan la clasificación por tipo**: Los filtros de tipo dicen **qué es** una acción; los filtros temporales dicen **cuándo vive**
 
-> **En SYSTEC, los filtros de tipo dicen qué es una acción.  
+> **En MAR ![Logo MAR](assets/images/MAR_logo_full.png), los filtros de tipo dicen qué es una acción.  
 > Los filtros temporales dicen cuándo vive.  
 > Nunca se mezclan, pero se usan en conjunto para una visión completa.**

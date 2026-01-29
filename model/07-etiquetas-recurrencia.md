@@ -1,11 +1,11 @@
 
-# SYSTEC — Recurrencias y filtros temporales
+# MAR ![Logo MAR](assets/images/MAR_logo_full.png) — Recurrencias y filtros temporales
 
 ---
 
-## 1. Por qué SYSTEC explicita las recurrencias
+## 1. Por qué MAR ![Logo MAR](assets/images/MAR_logo_full.png) explicita las recurrencias
 
-SYSTEC clasifica acciones según su **estructura temporal real** en Todoist  
+MAR ![Logo MAR](assets/images/MAR_logo_full.png) clasifica acciones según su **estructura temporal real** en Todoist  
 (hora, recurrencia y deadline), no según etiquetas manuales.
 
 Sin embargo, **no toda recurrencia es equivalente**:
@@ -15,13 +15,13 @@ Sin embargo, **no toda recurrencia es equivalente**:
 - no tienen el mismo coste cognitivo  
 - no se revisan con la misma frecuencia  
 
-Por ello, SYSTEC introduce **marcadores de recurrencia explícitos y paramétricos**.
+Por ello, MAR ![Logo MAR](assets/images/MAR_logo_full.png) introduce **marcadores de recurrencia explícitos y paramétricos**.
 
 ---
 
-## 2. Marcadores de recurrencia en SYSTEC
+## 2. Marcadores de recurrencia en MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
-SYSTEC utiliza los siguientes marcadores base:
+MAR ![Logo MAR](assets/images/MAR_logo_full.png) utiliza los siguientes marcadores base:
 
 - `@d` → diario  
 - `@s` → semanal  
@@ -53,7 +53,7 @@ donde:
 
 ## 3. Qué significan estos marcadores
 
-Los marcadores de recurrencia en SYSTEC:
+Los marcadores de recurrencia en MAR ![Logo MAR](assets/images/MAR_logo_full.png):
 
 - ❌ **NO son etiquetas de tipo**
 - ❌ **NO definen si algo es tarea, hábito o meta**
@@ -75,7 +75,7 @@ Es importante dejarlo claro:
 - No fuerzan prioridades
 - No introducen presión temporal (eso es el deadline)
 
-> En SYSTEC, **la ontología la definen los filtros**,  
+> En MAR ![Logo MAR](assets/images/MAR_logo_full.png), **la ontología la definen los filtros**,  
 > los marcadores solo describen el *ritmo humano*.
 
 ---
@@ -142,11 +142,11 @@ Los marcadores **orientan la revisión**, no la ejecución diaria.
 
 ---
 
-## 6. Relación con los tipos SYSTEC
+## 6. Relación con los tipos MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 Los marcadores **cruzan** los tipos, no los sustituyen.
 
-| Tipo SYSTEC | ¿Puede llevar @d/@s/@m/@a?                   |
+| Tipo MAR ![Logo MAR](assets/images/MAR_logo_full.png) | ¿Puede llevar @d/@s/@m/@a?                   |
 | ----------- | -------------------------------------------- |
 | Idea        | ❌ No                                         |
 | Meta        | ⚠️ Raro                                      |
@@ -200,7 +200,7 @@ no deadline
 
 ---
 
-## 8. Relación con los filtros canónicos SYSTEC
+## 8. Relación con los filtros canónicos MAR ![Logo MAR](assets/images/MAR_logo_full.png)
 
 Los filtros estructurales **no cambian**:
 
@@ -227,7 +227,7 @@ search:@m | search:@a
 ## 9. Regla de uso (crítica)
 
 > **Nunca uses @d @s @m @a (ni @d2, @m3, etc.) para decidir el tipo.**
-> Primero clasifica con SYSTEC.
+> Primero clasifica con MAR ![Logo MAR](assets/images/MAR_logo_full.png).
 > Después, si aporta valor cognitivo, añade el marcador.
 
 ---
@@ -240,7 +240,7 @@ search:@m | search:@a
 * No fuerza a Todoist a inferir intención
 * Escala desde lo diario hasta lo plurianual
 
-SYSTEC separa deliberadamente:
+MAR ![Logo MAR](assets/images/MAR_logo_full.png) separa deliberadamente:
 
 * **estructura temporal** (filtros)
 * **ritmo humano de ejecución** (marcadores paramétricos)
@@ -249,7 +249,7 @@ SYSTEC separa deliberadamente:
 
 ## 11. Regla final
 
-> **En SYSTEC, la recurrencia define la existencia en el tiempo.
+> **En MAR ![Logo MAR](assets/images/MAR_logo_full.png), la recurrencia define la existencia en el tiempo.
 > Los marcadores (`@d`, `@d2`, `@m3`…) definen el ritmo humano.**
 
 Son capas distintas.

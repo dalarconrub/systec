@@ -68,7 +68,7 @@ Esto creará una rama `gh-pages` con el sitio estático y lo publicará automát
 
 ## Notas
 
-- **Sitio principal:** [https://systec.netlify.app/](https://systec.netlify.app/)
-- **Sitio alternativo (GitHub Pages):** `https://dalarconrub.github.io/systec/`
+- **Sitio principal:** [https://MAR ![Logo MAR](assets/images/MAR_logo_full.png).netlify.app/](https://MAR ![Logo MAR](assets/images/MAR_logo_full.png).netlify.app/)
+- **Sitio alternativo (GitHub Pages):** `https://dalarconrub.github.io/MAR ![Logo MAR](assets/images/MAR_logo_full.png)/`
 - Los cambios se reflejan automáticamente después del deploy
 - La carpeta `site/` está en `.gitignore` y no debe subirse a git
