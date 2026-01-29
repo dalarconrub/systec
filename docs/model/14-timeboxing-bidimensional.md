@@ -172,7 +172,7 @@ El macro-timeboxing define **cuándo se planifica, revisa y gobierna** cada elem
 
 ### 3.2 Clasificación por tipo de elemento
 
-| Tipo (MAR ![Logo MAR](assets/images/MAR_logo_full.png)) | Escala macro dominante |
+| Tipo (MAR ![Logo MAR](../assets/images/MAR_logo_full.png)) | Escala macro dominante |
 |---------------|------------------------|
 | Eventos | Diaria / Semanal |
 | Hábitos | Diaria / Semanal / Anual |
@@ -350,7 +350,7 @@ Al combinar MAR ![Logo MAR](../assets/images/MAR_logo_full.png) + MAR/GAO se pue
 - El tiempo se compromete en **bloques**, no en intenciones vagas.  
 - La sobreplanificación está prohibida: no se asignan más bloques de los disponibles.  
 - Todo avance debe ser **medible y revisable**.  
-- Los horizontes temporales de MAR ![Logo MAR](assets/images/MAR_logo_full.png) y el timeboxing MAR/GAO se usan juntos, nunca en conflicto.
+- Los horizontes temporales de MAR ![Logo MAR](../assets/images/MAR_logo_full.png) y el timeboxing MAR/GAO se usan juntos, nunca en conflicto.
 
 ---
 
@@ -368,5 +368,5 @@ En el contexto de MAR ![Logo MAR](../assets/images/MAR_logo_full.png):
 - Los **horizontes y bandejas** definen **cuándo vive**.  
 - MAR/GAO y el **timeboxing bidimensional** definen **cómo se ejecuta y cómo se mide**.
 
-El sistema **Meta–Acción–Resultado / Goal–Action–Outcome** se convierte así en el **marco único de ejecución y evaluación** sobre la ontología temporal de MAR ![Logo MAR](assets/images/MAR_logo_full.png).
+El sistema **Meta–Acción–Resultado / Goal–Action–Outcome** se convierte así en el **marco único de ejecución y evaluación** sobre la ontología temporal de MAR ![Logo MAR](../assets/images/MAR_logo_full.png).
 
