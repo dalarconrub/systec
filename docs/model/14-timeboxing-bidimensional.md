@@ -39,6 +39,124 @@ La ejecución **solo ocurre en el nivel micro** y **solo mediante acciones**.
 
 ---
 
+## 2.1 Dimensiones temporales del sistema
+
+Toda tarea, meta o resultado puede analizarse desde dos dimensiones temporales complementarias:
+
+- **Diacrónica**, cuando se planifica en términos de duración y avance desde el presente.
+- **Sincrónica**, cuando se vincula a un marco calendario con límites definidos.
+
+> **El error habitual** en productividad es confundir ambas dimensiones, tratando procesos (diacrónicos) como si fueran eventos de calendario (sincrónicos), lo que genera fricción, ansiedad y sensación de fracaso.
+
+### 2.1.1 Dimensión diacrónica (tiempo como duración)
+
+**Definición operativa**
+
+La **dimensión diacrónica** organiza el tiempo como **duración continua medida en número de días a partir del momento presente**.
+
+- Se expresa como: `hoy + n días`
+- No depende del calendario civil
+- Ejemplos:
+  - Próximos **7 días**
+  - Próximos **14 días**
+  - Próximos **30 días**
+  - Horizonte de **90 días**
+
+Aquí, *una semana* no es "esta semana", sino **un intervalo móvil de +7 días desde hoy**.
+
+**Clave estructural**
+
+👉 El tiempo se concibe como **flujo**, no como contenedor.
+
+**Psicología del proceso**
+
+La dimensión diacrónica activa principalmente:
+
+- **Cognición prospectiva** (pensar hacia adelante desde el ahora)
+- **Autorregulación continua**
+- **Motivación orientada al progreso**
+- **Percepción de control**
+
+Psicológicamente:
+
+- El sujeto se sitúa en el **centro del eje temporal**
+- El tiempo es **personal**, flexible y ajustable
+- Reduce la ansiedad asociada a fechas "externas"
+- Favorece el *"¿qué puedo avanzar en los próximos X días?"*
+
+👉 Ideal para:
+
+- Desarrollo de proyectos
+- Sprints
+- Hábitos
+- Investigación
+- Procesos complejos y acumulativos
+
+### 2.1.2 Dimensión sincrónica (tiempo como marco calendario)
+
+**Definición operativa**
+
+La **dimensión sincrónica** organiza el tiempo en **ventanas fijas definidas por el calendario**, con límites socialmente establecidos.
+
+- Se expresa como: `intervalos cerrados`
+- Depende del calendario
+- Ejemplos:
+  - **Esta semana** (hasta domingo)
+  - **Este mes** (hasta último día del mes)
+  - **Este año** (hasta 31 de diciembre)
+
+Aquí el foco no es la duración, sino **la pertenencia a un marco temporal compartido**.
+
+**Clave estructural**
+
+👉 El tiempo se concibe como **estructura**, no como flujo.
+
+**Psicología del compromiso y la norma**
+
+La dimensión sincrónica activa principalmente:
+
+- **Conciencia normativa**
+- **Evaluación social y externa**
+- **Cierre cognitivo**
+- **Percepción de urgencia simbólica**
+
+Psicológicamente:
+
+- El sujeto se adapta a **marcos compartidos**
+- El tiempo impone **límites externos**
+- Aumenta la presión por cerrar tareas
+- Favorece el *"tiene que estar listo antes de…"*
+
+👉 Ideal para:
+
+- Entregas
+- Docencia
+- Evaluaciones
+- Informes
+- Obligaciones institucionales
+
+### 2.1.3 Comparación sintética
+
+| Aspecto             | Diacrónica               | Sincrónica                         |
+| ------------------- | ------------------------ | ---------------------------------- |
+| Tipo de tiempo      | Duración                 | Marco                              |
+| Referencia          | Hoy                      | Calendario                         |
+| Límites             | Móviles                  | Fijos                              |
+| Control percibido   | Alto                     | Medio–bajo                         |
+| Estrés asociado     | Bajo–moderado            | Moderado–alto                      |
+| Función psicológica | Proceso                  | Cierre                             |
+| Pregunta clave      | "¿Qué avanzo en X días?" | "¿Qué debe estar hecho antes de…?" |
+
+### 2.1.4 Encaje con el sistema Meta–Acción–Resultado
+
+- **Metas** → preferentemente **diacrónicas**
+- **Acciones** → mixtas
+- **Resultados** → preferentemente **sincrónicos** (verificables, cerrables)
+
+Esto refuerza la coherencia psicológica del modelo y justifica por qué **no todo debe tener fecha de calendario**.
+
+---
+
 ## 3. Macro-timeboxing (nivel estructural)
 
 El macro-timeboxing define **cuándo se planifica, revisa y gobierna** cada elemento, sin asignación horaria concreta.
